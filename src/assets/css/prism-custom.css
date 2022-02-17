@@ -1,0 +1,62 @@
+.code-Snippet div.code-toolbar > .toolbar {
+  opacity: 1;
+  top: 0.8em;
+  right: 1.6em;
+}
+
+.code-Snippet pre[class*="language-"] {
+  border: none;
+  max-height: 30rem;
+  background: black;
+}
+
+.code-Snippet .language-markup .token {
+  color: red;
+}
+
+.code-Snippet .language-markup .token.tag {
+  color: white;
+}
+
+.code-Snippet div.code-toolbar > .toolbar > .toolbar-item > button {
+  position: relative;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #65ccb9;
+  color: black;
+  cursor: pointer;
+  opacity: 0.92;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.code-Snippet div.code-toolbar > .toolbar > .toolbar-item > button:hover {
+  font-weight: 600;
+  background: var(--PRIMARY-DARK);
+  color: var(--WHITE);
+  cursor: pointer;
+  opacity: 0.95;
+  transition: all ease-in-out 0.5s;
+}
+
+.code-Snippet div.code-toolbar > .toolbar > .toolbar-item > button:active {
+  top: 1px;
+}
+
+.code-Snippet pre[class*="language-"] {
+  border: none;
+  max-height: 20rem;
+  border-radius: 8px;
+  background: #011627;
+}
+.code-Snippet .token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  color: #7fdbca;
+}
+
+.code-Snippet code[class*="language-"] {
+  color: #ecc48d;
+}
