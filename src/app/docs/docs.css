@@ -2,6 +2,7 @@
 @import "../components/avatar/avatar.css";
 @import "../components/badge/badge.css";
 @import "../../assets/css/prism-custom.css";
+@import "../../assets/css/color.css";
 
 * {
   margin: 0px;
@@ -10,54 +11,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   list-style: none;
-}
-
-:root {
-  /* --PRIMARY: #9319f7; */
-  --PRIMARY: #329986;
-  --PRIMARY-DARK: #006653;
-  /* --SECONDARY: #b563f7; */
-  --SECONDARY: #65ccb9;
-  --SECONDARY-DARK: #4c998b;
-  --WHITE: #fff;
-  --GREEN: #008000;
-  --ALIZARIN: #e92020;
-  --GRAY: #808080;
-  --CORAL: #ff7f50;
-  --BLUE-VIOLET: #8a2be2;
-  --GREEN-LIGHT: #008000;
-  --DARK-GRAY: #9e9e9e2b;
-  --DISABLED-GREY: #565454;
-
-  --STEEL-GREY: #41464b;
-
-  --ZIRCON-GREY: #e2e3e5;
-
-  --ZUMTHOR-GREY: #d3d6d8;
-
-  --FUN-GREEN-SUCCESS: #0f5132;
-
-  --MANDARIAN-ORANGE-DANGER: #842029;
-
-  --CAROUSEL-PINK: #f8d7da;
-
-  --CORAL-CANDY: #f5c2c7;
-
-  --WARNING-OLIVE: #664d03;
-
-  --LEMON-CHIFFON: #fff3cd;
-
-  --MOCCASIN: #ffecb5;
-
-  --INFO-MOSQUE: #055160;
-
-  --COLUMBIA-BLUE: #b6effb;
-
-  --LIGHT-CYAN: #cff4fc;
-
-  --DISABLED--GREY-DARK: #9e9e9e9c;
-
-  --GREY: #808080;
 }
 
 html {
@@ -103,7 +56,7 @@ body {
   align-items: center;
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--PRIMARY-DARK);
+  color: var(--GREEN-DARK);
 }
 
 .navbar li img {
@@ -117,7 +70,7 @@ body {
 }
 
 .navbar > li:nth-child(2) {
-  color: #006653;
+  color: var(--GREEN-DARK);
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -139,7 +92,7 @@ body {
 }
 
 .navbar--background {
-  border: 1px solid var(--PRIMARY-DARK);
+  border: 1px solid var(--GREEN-DARK);
 }
 
 /* navbar end */
@@ -169,12 +122,12 @@ body {
 
 .sidebar ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--BLACK);
   font-size: 1.25rem;
 }
 
 .sidebar ul li:hover a {
-  color: var(--PRIMARY);
+  color: var(--GREEN);
 }
 
 .sidebar__parent {
@@ -189,7 +142,6 @@ body {
   top: 4rem;
   left: 12rem;
   height: 100%;
-  width: 100%;
   overflow: scroll;
   grid-area: content;
   padding: 0rem 1.5rem;
@@ -244,9 +196,9 @@ h2.component__heading {
 
 .components > span span b,
 .components > p b {
-  color: #2e2e2e;
-  border: 1px solid white;
-  background-color: #65ccb9;
+  color: var(--TEXT-GREY);
+  border: 1px solid var(--WHITE);
+  background-color: var(--GREEN-LIGHTER);
   padding: 3px 5px;
   border-radius: 5px;
   font-size: 1.1rem;

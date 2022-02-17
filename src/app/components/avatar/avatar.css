@@ -1,29 +1,31 @@
 .avatar img {
   border-radius: 50%;
   /* margin-left: 0.5rem; */
+  width: 100%;
+  height: auto;
 }
 
-.avatar--xl img {
+.avatar--xl {
   height: 9rem;
   width: 9rem;
 }
 
-.avatar--lg img {
+.avatar--lg {
   height: 7rem;
   width: 7rem;
 }
 
-.avatar--std img {
+.avatar--std {
   height: 5rem;
   width: 5rem;
 }
 
-.avatar--sm img {
+.avatar--sm {
   height: 4rem;
   width: 4rem;
 }
 
-.avatar--xs img {
+.avatar--xs {
   height: 2rem;
   width: 2rem;
 }

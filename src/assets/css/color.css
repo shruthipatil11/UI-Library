@@ -1,0 +1,58 @@
+:root {
+  --GREEN: #329986;
+  --GREEN-DARK: #006653;
+  --GREEN-LIGHTER: #65ccb9;
+  --GREEN-LIGHT: #4c998b;
+  --WHITE: #fff;
+  /* --GREEN: #008000; */
+  --RED: #e92020;
+  --CORAL: #ff7f50;
+  /* --BLUE-VIOLET: #8a2be2; */
+  /* --GREEN-LIGHT: #008000; */
+
+  --GREY: #808080;
+  --DARK-GRAY: #9e9e9e2b;
+  --DISABLED-GREY: #565454;
+
+  --STEEL-GREY: #41464b;
+
+  --ALERT-PRIMARY-BG: #9e9e9ea8;
+
+  --ALERT--SECONDARY-BG: #e2e3e5;
+
+  --ALERT--SECONDARY-BORDER: #d3d6d8;
+
+  --DISABLED--GREY-DARK: #9e9e9e9c;
+
+  --SUCCESS-MESSAGE: #0f5132;
+
+  --SUCCESS-BG: #d1e7dd;
+
+  ----SUCCESS-BORDER: #badbcc;
+
+  --DANGER-MESSAGE: #842029;
+
+  --DANGER-BACKGROUND: #f8d7da;
+
+  --DANGER-BORDER: #f5c2c7;
+
+  --WARNING-MESSAGE: #664d03;
+
+  --WARNING-BACKGROUND: #fff3cd;
+
+  --WARNING-BORDER: #ffecb5;
+
+  --INFO-MESSAGE: #055160;
+
+  --INFO-BORDER: #b6effb;
+
+  --INFO-BACKGROUND: #cff4fc;
+
+  --TEXT-OVERLAY-BG: #eaeaec99;
+
+  --TEXT-OVERLAY-TEXT: #9e9e9e;
+
+  --TEXT-GREY: #2e2e2e;
+
+  --BLACK: #000000;
+}

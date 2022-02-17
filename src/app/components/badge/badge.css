@@ -17,7 +17,7 @@
 
 .badge--dnd span {
   padding: 0.5rem;
-  background-color: var(--ALIZARIN);
+  background-color: var(--RED);
   top: 5.9rem;
   right: 1.1rem;
   border: 4px solid var(--WHITE);
@@ -32,7 +32,7 @@
 }
 
 .badge__count span {
-  background-color: var(--PRIMARY);
+  background-color: var(--GREEN);
   padding: -1.8rem;
   width: 1.5rem;
   height: 1.5rem;
