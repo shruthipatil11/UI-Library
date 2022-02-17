@@ -142,6 +142,7 @@ body {
   top: 4rem;
   left: 12rem;
   height: 100%;
+  width: 84%;
   overflow: scroll;
   grid-area: content;
   padding: 0rem 1.5rem;
