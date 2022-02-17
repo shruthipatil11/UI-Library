@@ -185,17 +185,21 @@ body {
 
 /* Components start */
 .components__wrapper {
+  position: fixed;
+  top: 4rem;
+  left: 12rem;
   height: 100%;
+  width: 100%;
   overflow: scroll;
   grid-area: content;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 1.5rem;
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
 }
 
 .components {
   display: flex;
   column-gap: 2.5rem;
-  padding: 3.3rem 1rem;
+  padding: 1rem;
   flex-direction: column;
   justify-content: space-around;
   row-gap: 1rem;
