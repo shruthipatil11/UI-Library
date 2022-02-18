@@ -25,7 +25,7 @@
 
 .badge--offline span {
   padding: 0.3rem;
-  background-color: var(--GRAY);
+  background-color: var(--GREY);
   top: 3.8rem;
   left: 3.5rem;
   border: 3px solid var(--WHITE);
