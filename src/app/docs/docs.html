@@ -52,8 +52,7 @@
     </aside>
 
     <main class="components__wrapper">
-      <div id="top"></div>
-      <!-- Avatar -->
+      <!-- Avatar starts-->
 
       <section class="components" id="avatar">
         <h2 class="component__heading">Avatar</h2>
@@ -139,7 +138,7 @@
 
       <hr />
 
-      <!-- Badge -->
+      <!-- Badge starts-->
 
       <section class="components" id="badge">
         <h2 class="component__heading">Badge</h2>
@@ -247,11 +246,224 @@
             </figure>
           </script>
         </div>
-
-        <hr />
       </section>
 
       <!-- Badge ends -->
+
+      <hr />
+
+      <!-- Alerts starts-->
+
+      <section class="components" id="alert">
+        <h2 class="component__heading">Alerts</h2>
+        <p class="component__sub-heading">
+          Alert messages can be used to notify the user about something special:
+          danger, success, information or warning without interrupting the
+          user's flow.
+        </p>
+        <div class="components__parts components--flex--column">
+          <div class="alert alert--primary" role="alert">
+            A primary alert with text link <a href="#">Check it out!</a>
+          </div>
+          <div class="alert alert--secondary" role="alert">
+            A secondary alert
+          </div>
+          <div class="alert alert--success" role="alert">
+            <span><i class="far fa-check-circle"></i></span>A success alert
+          </div>
+          <div class="alert alert--danger" role="alert">
+            <span><i class="fas fa-exclamation-triangle"></i></span>A danger
+            alert
+          </div>
+          <div class="alert alert--warning" role="alert">
+            <span><i class="fas fa-exclamation-circle"></i></span>A warning
+            alert
+          </div>
+          <div class="alert alert--info" role="alert">
+            <span><i class="fas fa-info-circle"></i></span>A info alert
+          </div>
+        </div>
+        <p>
+          Alerts are available for any length of text. For proper styling, use
+          one of the seven required contextual classes
+        </p>
+        <span>
+          <span><b>alert--primary</b></span>
+          <span><b>alert--secondary </b></span>
+          <span><b>alert--success </b></span>
+          <span><b>alert--danger </b></span>
+          <span><b>alert--warning </b></span>
+          <span><b>alert--info </b></span>
+        </span>
+
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Primary alert -->
+            <div class="alert alert--primary " role="alert">
+               A primary alert with text link <a href="#">Check it out!</a>
+             </div>
+
+             <!-- Secondary alert -->
+             <div class="alert alert--secondary" role="alert">A secondary alert</div>
+
+             <!-- Success alert -->
+             <div class="alert alert--success">
+               <span><i class="far fa-check-circle"></i></span>A success alert
+             </div>
+
+             <!-- Danger alert -->
+             <div class="alert alert--danger" role="alert">
+               <span><i class="fas fa-exclamation-triangle"></i></span>A danger
+               alert
+             </div>
+
+             <!-- Warning alert -->
+             <div class="alert alert--warning" role="alert">
+               <span><i class="fas fa-exclamation-circle"></i></span>A warning
+               alert
+             </div>
+
+             <!-- Info alert -->
+             <div class="alert alert--info" role="alert">
+               <span><i class="fas fa-info-circle"></i></span>A info alert
+             </div>
+          </script>
+        </div>
+      </section>
+
+      <!-- Alerts ends -->
+
+      <hr />
+
+      <!-- Buttons starts -->
+
+      <section class="components" id="button">
+        <h2 class="component__heading">Buttons</h2>
+        <p class="component__sub-heading">
+          Buttons have the power to compel users to convert, to carry out an
+          action. Buttons are a middleman between the user and the product, and
+          are charged with keeping the conversation between person and machine
+          going.
+        </p>
+
+        <p>The buttons are of three major types:</p>
+        <span>
+          <span><b>btn--primary </b>(for Primary action),</span>
+          <span><b>btn--secondary </b>(for Secondary action),</span>
+          <span><b>disabled </b>(for disabled button).</span>
+        </span>
+
+        <div class="components__parts">
+          <button class="btn btn--primary">Primary Button</button>
+          <button class="btn btn--secondary">Secondary Button</button>
+          <button class="btn disabled">Disabled button</button>
+        </div>
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Button Types -->
+            <button class="btn btn--primary">Primary Button</button>
+            <button class="btn btn--secondary">Secondary Button</button>
+            <button class="btn  disabled" >
+              Disabled button
+            </button>
+          </script>
+        </div>
+
+        <h3>Outlined Buttons</h3>
+        <div class="components__parts">
+          <button class="btn btn--outlined btn--primary">Primary Button</button>
+          <button class="btn btn--outlined btn--secondary">
+            Secondary Button
+          </button>
+          <button class="btn btn--outlined disabled">Disabled button</button>
+        </div>
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Outlined Buttons -->
+            <button class="btn btn--outlined btn--primary">Primary Button</button>
+            <button class="btn btn--outlined btn--secondary">
+              Secondary Button
+            </button>
+            <button class="btn btn--outlined disabled" >
+              Disabled button
+            </button>
+          </script>
+        </div>
+
+        <h3>Link</h3>
+        <div class="components__parts">
+          <a href="#" role="button" class="link">Primary Link</a>
+          <a href="#" role="button" class="link disabled"> Link Disabled</a>
+        </div>
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Links -->
+            <a href="#" role="button" class="link">Primary Link</a>
+            <a href="#" role="button" class="link disabled"> Link Disabled</a>
+          </script>
+        </div>
+
+        <h3>Icon buttons with label</h3>
+        <div class="components__parts">
+          <button class="btn btn--primary flex-center">
+            <span> <i class="fas fa-shopping-cart"></i></span>Add
+          </button>
+          <button class="btn btn--secondary flex-center">
+            <span> <i class="fas fa-trash"></i></span>Delete
+          </button>
+        </div>
+        <p></p>
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Icon buttons with label -->
+            <button class="btn btn--primary flex-center">
+              <span> <i class="fas fa-shopping-cart"></i></span>Add
+            </button>
+            <button class="btn btn--secondary flex-center">
+              <span> <i class="fas fa-trash"></i></span>Delete
+            </button>
+          </script>
+        </div>
+
+        <h3>Floating Button</h3>
+        <div class="components__parts">
+          <button class="btn__floating">
+            <i class="fas fa-plus-circle fa-2x"></i>
+          </button>
+          <button class="btn__floating">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Floating Buttons -->
+            <button hre="#" role="button" class="btn__floating"><i class="fas fa-plus-circle fa-2x"></i></button>
+            <button hre="#" role="button" class="btn__floating">  <i class="fas fa-arrow-up"></i></button>
+          </script>
+        </div>
+      </section>
+
+      <!-- Buttons ends -->
+
+      <hr />
     </main>
     <footer></footer>
     <script src="../../assets/js/prism.js"></script>

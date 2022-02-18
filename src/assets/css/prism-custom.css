@@ -57,6 +57,8 @@
   color: #7fdbca;
 }
 
-.code-Snippet code[class*="language-"] {
+.code-Snippet code[class*="language-"],
+.code-Snippet pre[class*="language-"] {
   color: #ecc48d;
+  font-size: 1.3rem;
 }

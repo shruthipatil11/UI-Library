@@ -3,6 +3,8 @@
 @import "../components/badge/badge.css";
 @import "../../assets/css/prism-custom.css";
 @import "../../assets/css/color.css";
+@import "../components/alert/alert.css";
+@import "../components/button/button.css";
 
 * {
   margin: 0px;
@@ -173,24 +175,25 @@ body {
 }
 
 h2.component__heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 .components > h3 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .components > p.component__sub-heading {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
 
 .components > p,
 .components span > span {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
