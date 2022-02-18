@@ -208,6 +208,10 @@ h2.component__heading {
   font-size: 1.1rem;
 }
 
+.components > span span b {
+  padding: 3px 8px;
+}
+
 .components > span {
   display: flex;
   flex-wrap: wrap;

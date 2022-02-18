@@ -34,6 +34,7 @@
   cursor: none;
   color: var(--DISABLED-GREY);
   background-color: var(--DISABLED--GREY-DARK);
+  pointer-events: none;
 }
 
 .btn--outlined {
@@ -53,16 +54,15 @@
   color: var(--DISABLED-GREY);
 }
 
-.alert span,
 .btn__icon span {
   margin-right: 1rem;
 }
 
 .btn__floating {
-  border: 3px solid whitesmoke;
+  border: 3px solid var(--WHITE);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem var(--GREY);
+  box-shadow: 5px 5px 9px 3px var(--GREY);
   width: 3rem;
   height: 3rem;
   font-size: 1rem;
