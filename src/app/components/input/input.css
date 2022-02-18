@@ -1,14 +1,14 @@
-.input_field {
+.input-field {
   position: relative;
 }
 
-.input_field input {
+.input-field input {
   padding: 0.7rem;
   min-width: 5rem;
   outline: none;
 }
 
-.input_field .input__label {
+.input-field .input__label {
   position: absolute;
   left: 0;
   bottom: 33px;
