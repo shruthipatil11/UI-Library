@@ -256,12 +256,9 @@
       <!-- images start-->
       <div class="components" id="image">
         <h2 class="component__heading">Responsive images</h2>
-        <p class="component__sub-heading">
-          A card is a flexible and extensible content container.
-        </p>
         <p>
           Images are made responsive with .image--responsive . This applies
-          max-width: 100%; and height: auto; to the image so that it scales with
+          max-width: 100% and height: auto to the image so that it scales with
           the parent width.
         </p>
         <h3>Responsive Image</h3>
@@ -269,7 +266,7 @@
           <figure class="image__container">
             <img
               class="image--responsive"
-              src="assests/images/image-responsive.jpg"
+              src="../../assets/images/image-responsive.jpg"
               alt="Responsive image"
             />
           </figure>
@@ -289,17 +286,17 @@
           >
             <!-- Snippet for Responsive image -->
             <figure class="image__container">
-              <img class="image--responsive" src="" alt="Responsive image" />
+              <img class="image--responsive" src="..." alt="Responsive image" />
             </figure>
           </script>
         </div>
 
         <h3>Round Image</h3>
         <div class="components__parts">
-          <figure class="image__container image-round">
+          <figure class="image__container image--round">
             <img
               class="image--responsive"
-              src="assests/images/image-responsive.jpg"
+              src="../../assets/images/image-responsive.jpg"
               alt="Responsive Round image"
             />
           </figure>
@@ -307,7 +304,7 @@
 
         <span>
           Class Modifier:
-          <span><b>image-round</b>(apply on container)</span>
+          <span><b>image--round</b>(apply on container)</span>
         </span>
 
         <!-- Snippet for Responsive Round image -->
@@ -317,9 +314,13 @@
             class="line-numbers language-css snippet_container__script"
           >
             <!-- Snippet for Responsive Round image -->
-            <figure class="image__container">
-              <img class="image--responsive image-round" src="..." alt="Responsive Round image " />
-            </figure>
+              <figure class="image__container image--round">
+                <img
+                  class="image--responsive"
+                  src="..."
+                  alt="Responsive Round image"
+                />
+              </figure>
           </script>
         </div>
       </div>
@@ -332,10 +333,9 @@
       <div class="components" id="input">
         <h2 class="component__heading">Input</h2>
         <p class="component__sub-heading">
-          Input element is used to create interactive controls for web-based
-          forms in order to accept data from the user.
+          Input element is used to create interactive controls in order to
+          accept data from the user.
         </p>
-        <p></p>
 
         <h3>Standard Input</h3>
         <div class="components__parts">
@@ -357,10 +357,11 @@
             type="text/plain"
             class="line-numbers language-css snippet_container__script"
           >
-            <div class="input_field">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
+            <!-- Snippet for Input -->
+              <div class="input_field">
+                <input type="text" name="inputText" />
+                <span class="input__label">Label</span>
+              </div>
           </script>
         </div>
 
@@ -393,18 +394,19 @@
             type="text/plain"
             class="line-numbers language-css snippet_container__script"
           >
-            <div class="input_field input--success">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-            <div class="input_field input--warn">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-            <div class="input_field input--error">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
+            <!-- Snippet for Input Validation -->
+             <div class="input_field input--success">
+               <input type="text" name="inputText" />
+               <span class="input__label">Label</span>
+             </div>
+             <div class="input_field input--warn">
+               <input type="text" name="inputText" />
+               <span class="input__label">Label</span>
+             </div>
+             <div class="input_field input--error">
+               <input type="text" name="inputText" />
+               <span class="input__label">Label</span>
+             </div>
           </script>
         </div>
       </div>
