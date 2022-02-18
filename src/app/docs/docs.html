@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header class="header">
       <nav>
@@ -93,42 +94,27 @@
           >
             <!--  avatar--xl  -->
             <figure class="avatar avatar--xl">
-              <img
-                src="../../assets/images/avatar-1.png"
-                alt="avatar profile is not available"
-              />
+              <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
             </figure>
 
             <!--  avatar--lg  -->
             <figure class="avatar avatar--lg">
-              <img
-                src="../../assets/images/avatar-2.png"
-                alt="avatar profile is not available"
-              />
+              <img src="../../assets/images/avatar-2.png" alt="avatar profile is not available" />
             </figure>
 
             <!--   avatar--std  -->
             <figure class="avatar avatar--std">
-              <img
-                src="../../assets/images/avatar-3.png"
-                alt="avatar profile is not available"
-              />
+              <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
             </figure>
 
             <!--   avatar--sm  -->
             <figure class="avatar avatar--sm">
-              <img
-                src="../../assets/images/avatar-4.jpg"
-                alt="avatar profile is not available"
-              />
+              <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
             </figure>
 
             <!--   avatar--xs  -->
             <figure class="avatar avatar--xs">
-              <img
-                src="../../assets/images/avatar-5.jpg"
-                alt="avatar profile is not available"
-              />
+              <img src="../../assets/images/avatar-5.jpg" alt="avatar profile is not available" />
             </figure>
           </script>
         </div>
@@ -184,30 +170,21 @@
           >
             <!-- badge--online -->
             <figure class="avatar avatar--xl badge badge--online">
-               <img
-                 src="../../assets/images/avatar-3.png"
-                 alt="avatar profile is not available"
-               />
-               <span></span>
-             </figure>
+              <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
+              <span></span>
+            </figure>
 
-             <!-- badge--dnd -->
-             <figure class="avatar avatar--lg badge badge--dnd">
-               <img
-                 src="../../assets/images/avatar-1.png"
-                 alt="avatar profile is not available"
-               />
-               <span></span>
-             </figure>
+            <!-- badge--dnd -->
+            <figure class="avatar avatar--lg badge badge--dnd">
+              <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
+              <span></span>
+            </figure>
 
-             <!-- badge--offline -->
-             <figure class="avatar avatar--std badge badge--offline">
-               <img
-                 src="../../assets/images/avatar-4.jpg"
-                 alt="avatar profile is not available"
-               />
-               <span></span>
-             </figure>
+            <!-- badge--offline -->
+            <figure class="avatar avatar--std badge badge--offline">
+              <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
+              <span></span>
+            </figure>
           </script>
         </div>
 
@@ -466,6 +443,163 @@
       </section>
 
       <!-- Buttons ends -->
+
+      <hr />
+
+      <!-- images start-->
+      <div class="components" id="image">
+        <h2 class="component__heading">Responsive images</h2>
+        <p>
+          Images are made responsive with .image--responsive . This applies
+          max-width: 100% and height: auto to the image so that it scales with
+          the parent width.
+        </p>
+        <h3>Responsive Image</h3>
+        <div class="components__parts">
+          <figure class="image-container">
+            <img
+              class="image--responsive"
+              src="../../assets/images/image-responsive.jpg"
+              alt="Responsive image"
+            />
+          </figure>
+        </div>
+
+        <span>
+          Class Modifier:
+          <span><b>image-container</b> (apply on parent container)</span>
+          <span><b>image--responsive</b> (apply on image itself)</span>
+        </span>
+
+        <!-- Snippet for Responsive image -->
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Snippet for Responsive image -->
+            <figure class="image-container">
+              <img class="image--responsive" src="..." alt="Responsive image" />
+            </figure>
+          </script>
+        </div>
+
+        <h3>Round Image</h3>
+        <div class="components__parts">
+          <figure class="image-container image--round">
+            <img
+              class="image--responsive"
+              src="../../assets/images/image-responsive.jpg"
+              alt="Responsive Round image"
+            />
+          </figure>
+        </div>
+
+        <span>
+          Class Modifier:
+          <span><b>image--round</b>(apply on container)</span>
+        </span>
+
+        <!-- Snippet for Responsive Round image -->
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Snippet for Responsive Round image -->
+            <figure class="image-container image--round">
+              <img class="image--responsive" src="..." alt="Responsive Round image" />
+            </figure>
+          </script>
+        </div>
+      </div>
+
+      <!-- images ends -->
+
+      <hr />
+
+      <!-- Input starts -->
+      <div class="components" id="input">
+        <h2 class="component__heading">Input</h2>
+        <p class="component__sub-heading">
+          Input element is used to create interactive controls in order to
+          accept data from the user.
+        </p>
+
+        <h3>Standard Input</h3>
+        <div class="components__parts">
+          <div class="input-field">
+            <input type="text" name="inputText" />
+            <span class="input__label">Label</span>
+          </div>
+        </div>
+
+        <span>
+          Class Modifier:
+          <span><b>input-field</b> (apply on parent container)</span>
+          <span><b>input__label</b> (apply on label)</span>
+        </span>
+
+        <!-- Snippet for Responsive image -->
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Snippet for Input -->
+            <div class="input-field">
+              <input type="text" name="inputText" />
+              <span class="input__label">Label</span>
+            </div>
+          </script>
+        </div>
+
+        <h3>Input with validations</h3>
+        <div class="components__parts components--flex--column">
+          <div class="input-field input--success">
+            <input type="text" name="inputText" />
+            <span class="input__label">Label</span>
+          </div>
+          <div class="input-field input--warn">
+            <input type="text" name="inputText" />
+            <span class="input__label">Label</span>
+          </div>
+          <div class="input-field input--error">
+            <input type="text" name="inputText" />
+            <span class="input__label">Label</span>
+          </div>
+        </div>
+
+        <span>
+          Class Modifier:
+          <span><b>input--success</b> (after successfull validation)</span>
+          <span><b>input--error</b> (error after validation)</span>
+          <span><b>input--warn</b> (warning after validation)</span>
+        </span>
+
+        <!-- Snippet for Responsive image -->
+        <div class="code-Snippet">
+          <script
+            type="text/plain"
+            class="line-numbers language-css snippet_container__script"
+          >
+            <!-- Snippet for Input Validation -->
+            <div class="input-field input--success">
+              <input type="text" name="inputText" />
+              <span class="input__label">Label</span>
+            </div>
+            <div class="input-field input--warn">
+              <input type="text" name="inputText" />
+              <span class="input__label">Label</span>
+            </div>
+            <div class="input-field input--error">
+              <input type="text" name="inputText" />
+              <span class="input__label">Label</span>
+            </div>
+          </script>
+        </div>
+      </div>
+      <!-- input ends -->
 
       <hr />
     </main>

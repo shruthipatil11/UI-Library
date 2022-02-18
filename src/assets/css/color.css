@@ -55,4 +55,10 @@
   --TEXT-GREY: #2e2e2e;
 
   --BLACK: #000000;
+
+  --INPUT-SUCCESS: #008000cc;
+
+  --INPUT-WARN: #e5c665;
+
+  --INPUT-ERROR: #ef4756;
 }

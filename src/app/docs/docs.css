@@ -5,6 +5,8 @@
 @import "../../assets/css/color.css";
 @import "../components/alert/alert.css";
 @import "../components/button/button.css";
+@import "../components/image/image.css";
+@import "../components/input/input.css";
 
 * {
   margin: 0px;
@@ -216,6 +218,10 @@ h2.component__heading {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 /* Components end */
