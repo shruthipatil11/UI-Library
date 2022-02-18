@@ -1,0 +1,32 @@
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.card--align--items {
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  row-gap: 13px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.7rem;
+}
+
+hr {
+  margin: 0rem 1rem;
+}
