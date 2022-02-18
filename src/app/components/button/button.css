@@ -32,7 +32,7 @@
 
 .disabled {
   cursor: none;
-  color: var(--DISABLED-GREY);
+  color: var(--GREY);
   background-color: var(--DISABLED--GREY-DARK);
   pointer-events: none;
 }
