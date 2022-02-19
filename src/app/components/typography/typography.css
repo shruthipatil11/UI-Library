@@ -1,0 +1,69 @@
+.h1 {
+  font-size: 2em;
+}
+
+.h2 {
+  font-size: 1.5em;
+}
+
+.h3 {
+  font-size: 1.17em;
+}
+
+.h4 {
+  font-size: 1em;
+}
+
+.h5 {
+  font-size: 0.83em;
+}
+
+.h6 {
+  font-size: 0.67em;
+}
+
+.p--large {
+  font-size: 1.5rem;
+}
+
+.p--regular {
+  font-size: 1rem;
+}
+
+.p--medium {
+  font-size: 0.875rem;
+}
+
+.p--small {
+  font-size: 0.7rem;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--primary {
+  color: var(--GREEN-DARK);
+}
+
+.text--secondary {
+  color: var(--GREEN);
+}
+
+.text--tertiary {
+  color: var(--GREY);
+}
+
+#typography .components__parts {
+  border: 1px solid var(--GREEN-LIGHTER);
+  padding: 2rem;
+  margin-top: 0.5rem;
+}
