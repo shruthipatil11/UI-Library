@@ -7,6 +7,10 @@
 @import "../components/button/button.css";
 @import "../components/image/image.css";
 @import "../components/input/input.css";
+@import "../components/typography/typography.css";
+@import "../components/lists/lists.css";
+@import "../components/cards/cards.css";
+
 
 * {
   margin: 0px;
@@ -168,6 +172,7 @@ body {
   column-gap: 1rem;
   flex-wrap: wrap;
   row-gap: 1.25rem;
+  margin: 0.5rem 0rem;
 }
 
 .components--flex--column {

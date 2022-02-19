@@ -78,7 +78,7 @@
 
 .link.disabled {
   background-color: var(--WHITE);
-  color: var(--DISABLED--GREY-DARK);
+  color: var(--GREY);
 }
 
 .btn__link {

@@ -1,0 +1,70 @@
+#typography .components__parts .h1 {
+    font-size: 2em;
+}
+
+#typography .components__parts .h2 {
+    font-size: 1.5em;
+}
+
+#typography .components__parts .h3 {
+    font-size: 1.17em;
+}
+
+#typography .components__parts .h4 {
+    font-size: 1em;
+}
+
+#typography .components__parts .h5 {
+    font-size: 0.83em;
+}
+
+#typography .components__parts .h6 {
+    font-size: 0.67em;
+}
+
+.p--large {
+    font-size: 1.5rem;
+}
+
+.p--regular {
+    font-size: 1rem;
+}
+
+.p--medium {
+    font-size: 0.875rem;
+}
+
+.p--small {
+    font-size: 0.7rem;
+}
+
+.text--left {
+    text-align: left;
+}
+
+.text--right {
+    text-align: right;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--primary {
+    color: var(--GREEN-DARK);
+}
+
+
+.text--secondary {
+    color: var(--GREEN);
+}
+
+.text--tertiary {
+    color: var(--GREY);
+}
+
+#typography .components__parts {
+    border: 1px solid var(--GREEN-LIGHTER);
+    padding: 2rem;
+    margin-top: 0.5rem;
+}

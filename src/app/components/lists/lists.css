@@ -1,0 +1,50 @@
+.components__stacked-list li {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid;
+    margin-bottom: 1rem;
+}
+
+.components__stacked-list li span {
+    padding-right: 1rem;
+}
+
+.components__stacked-list li:first-child {
+    color: var(--SUCCESS-MESSAGE);
+    background-color: var(--SUCCESS-BG);
+    border-color: var(--SUCCESS-BORDER);
+}
+
+
+.components__stacked-list li:nth-child(2) {
+    color: var(--INFO-MESSAGE);
+    background-color: var(--INFO-BACKGROUND);
+    border-color: var(--INFO-BORDER);
+}
+
+.components__stacked-list li:nth-child(3) {
+    color: var(--WARNING-MESSAGE);
+    background-color: var(--WARNING-BACKGROUND);
+    border-color: var(--WARNING-BORDER);
+}
+
+
+.components__list ul,
+.components__list ol,
+.components__list dl {
+    border: 1px solid green;
+    padding: 2rem;
+    margin-top: 0.5rem;
+}
+
+#lists .components__list ul {
+    list-style-type: circle;
+}
+
+.components__list ol {
+    list-style-type: lower-alpha;
+}
+
+.components__list span {
+    font-weight: 600;
+}

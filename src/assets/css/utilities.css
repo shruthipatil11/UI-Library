@@ -14,13 +14,6 @@
   display: flex;
 }
 
-.card--align--items {
-  justify-content: space-around;
-  align-items: baseline;
-  flex-wrap: wrap;
-  row-gap: 13px;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -29,4 +22,25 @@
 
 hr {
   margin: 1.5rem 1rem;
+}
+
+.primary--light-color {
+  color: var(--GREEN-LIGHT);
+}
+
+.close-container {  
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  /* width: 18px; */
+  color: red;
+  opacity: 0.5;
+}
+
+.close:hover {
+  opacity: 1;
 }

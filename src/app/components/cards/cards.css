@@ -1,0 +1,110 @@
+.card {
+  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
+  min-height: 15.2rem;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  min-height: 7rem;
+  row-gap: 10px;
+  font-size: 1.2rem;
+}
+
+.card__image {
+  max-width: 18rem;
+  /* min-width: 20rem; */
+}
+
+.card__badge figure span {
+  border-radius: 6px;
+  background-color: var(--CORAL);
+  padding: 2px 9px;
+  border: none;
+}
+
+.card .badge span {
+  top: 0.5rem;
+  left: 0rem;
+}
+
+.card .components__parts {
+  gap: 1.25rem 3rem;
+}
+
+.card--align-items {
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  row-gap: 13px;
+}
+
+.card__image {
+  max-width: 18rem;
+  /* min-width: 20rem; */
+}
+
+.card--horizontal {
+  display: flex;
+}
+
+.card--horizontal .card__body {
+  min-width: 17rem;
+  padding: 20px;
+}
+
+.price__original {
+  text-decoration: line-through;
+}
+
+.card__body .price {
+  display: flex;
+  justify-content: center;
+  column-gap: 13px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.card__body .price p {
+  color: var(--GREY);
+}
+
+.card .card--shadow {
+  min-height: inherit;
+  box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 5%);
+}
+
+.card__text {
+  min-height: 20.5rem;
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+.card__text .card__body {
+  min-height: inherit;
+}
+
+.card--text-overlay {
+  position: relative;
+}
+
+.card--text-overlay .text-overlay {
+  position: absolute;
+  top: 0%;
+  padding: 13px;
+  background-color: var(--TEXT-OVERLAY-BG);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--TEXT-OVERLAY-TEXT);
+}
+
+.card .card--align-items {
+  padding-bottom:0.8rem;
+}
