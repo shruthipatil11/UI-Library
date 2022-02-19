@@ -562,7 +562,524 @@
     </div>
     <!-- input ends -->
     <hr />
+    <!-- Cards -->
+    <section class="components" id="card">
+      <h2 class="component__heading">Cards</h2>
+      <p class="component__sub-heading">
+        A card is a flexible and extensible content container.
+      </p>
+      <p>
+        We have options for vertical card, horizontal card, card with close
+        button,text only card and card with text overlay. Modifier classes are
+        available for these types of cards. You can choose the required card
+        and copy its html and substitute with your desired image and text.
+      </p>
+      <h3>Vertical Card with badge and close button</h3>
+      <!-- Card with badge and Card with close button -->
+      <div class="components__parts">
+        <div class="card card__badge">
+          <figure class="card__image badge">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+            <span>New</span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items card--spacing">
+              <button class="btn btn--primary flex-center">
+                <span> <i class="fas fa-shopping-cart"></i></span>Add to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <figure class="card__image close-container">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+            <span class="close"><i class="fas fa-times"></i></span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items card--spacing">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Snippet for card with badge -->
+      <span>
+        <span>Class Modifier: <b>card__badge </b>(badge on card)</span>
+      </span>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+
+          <!-- Snippet for card with badge -->
+        <div class="card card__badge">
+          <figure class="card__image badge">
+            <img class="image--responsive" src="..." alt="product image" />
+            <span>New</span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items card--spacing">
+              <button class="btn btn--primary flex-center">
+                <span> <i class="fas fa-shopping-cart"></i></span>Add to
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        </script>
+      </div>
+
+      <span>
+        <span>Class Modifier: <b>close-container </b>(position close button on image)</span>
+      </span>
+
+      <!-- Snippet for Card with close button -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Snippet for Card with close button -->
+
+        <div class="card">
+          <figure class="card__image close-container">
+            <img class="image--responsive" src="..." alt="product image" />
+            <span class="close"><i class="fas fa-times fa-lg"></i></span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items card--spacing">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        </script>
+      </div>
+
+      <!-- Horizontal card -->
+      <h3>Horizontal card</h3>
+      <div class="components__parts">
+        <div class="card card--horizontal">
+          <figure class="card__image close-container">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+            <span class="close"><i class="fas fa-times fa-lg"></i></span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <div class="price">
+              <b>&#x20B9; 2000</b>
+              <p class="price__original">&#x20B9; 3999</p>
+              <p>50% off</p>
+            </div>
+            <div class="d-flex card--align-items">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span>
+        <span>Class Modifier: <b>card--horizontal</b>(Horizontal card)</span>
+      </span>
+
+      <!-- Snippet for  Horizontal card-->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Snippet for  Horizontal card-->
+        <div class="card horizontal--card">
+          <figure class="card__image close-container">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+            <span class="close"><i class="fas fa-times fa-lg"></i></span>
+          </figure>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <div class="price">
+              <b>&#x20B9; 2000</b>
+              <p class="price__original">&#x20B9; 3999</p>
+              <p>50% off</p>
+            </div>
+            <div class="d-flex card--align-items">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        </script>
+      </div>
+
+      <!-- Text only card with shadow and Card with text overlay -->
+      <h3>Text only card with shadow and Card with text overlay</h3>
+      <div class="components__parts">
+        <div class="card card--shadow card__text">
+          <div class="card__body">
+            <h3>Card Header</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facilis, est sit nulla incidunt accusantium ullam aliquam,
+              laboriosam, laudantium molestiae omnis distinctio. Aliquam alias
+              laborum impedit illum praesentium vel, magnam fuga.
+            </p>
+          </div>
+        </div>
+
+        <div class="card card--text-overlay">
+          <figure class="card__image badge">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+          </figure>
+          <div class="text-overlay">Out Of Stock</div>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items card--spacing">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span>
+        Class Modifier:
+        <span><b>card--shadow </b>(applies shadow to card)</span>
+        <span><b>card__text</b>(explicit styling for text only card)</span>
+      </span>
+
+      <!-- Snippet for Text only card with shadow -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+
+          <!-- Snippet for Text only card with shadow -->
+        <div class="card card--shadow card__text">
+          <div class="card__body">
+            <h3>Card Header</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facilis, est sit nulla incidunt accusantium ullam aliquam,
+              laboriosam, laudantium molestiae omnis distinctio. Aliquam alias
+              laborum impedit illum praesentium vel, magnam fuga.
+            </p>
+          </div>
+        </div>
+        </script>
+      </div>
+
+      <span>
+        <span>
+          Class Modifier: <b>card--text-overlay</b>(card with text-overlay)</pre>
+        </span>
+
+        <!-- Snippet for Card with text overlay-->
+        <div class="code-Snippet">
+          <script type="text/plain" class="line-numbers language-css snippet_container__script">
+
+            <!-- Snippet for Card with text overlay-->
+
+          <div class="card card--text-overlay">
+            <figure class="card__image badge">
+              <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+            </figure>
+            <div class="text-overlay">Out Of Stock</div>
+            <div class="card__body">
+              <p>Men Premium Jacket</p>
+              <b> &#x20B9; 2000</b>
+              <div class="d-flex card--align-items">
+                <button class="btn btn--primary flex-center">
+                  <span>
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+                </button>
+                <i class="far fa-heart primary--light-color fa-lg"></i>
+                <i class="fas fa-share-alt primary--light-color fa-lg"></i>
+              </div>
+            </div>
+          </div>
+          </script>
+        </div>
+    </section>
+    <!-- Cards ends -->
+    <hr />
+    <!-- typography starts -->
+    <div class="components" id="typography">
+      <h2 class="component__heading">Typography</h2>
+      <h3>Headings</h3>
+
+      <p>For implementing the headings h1,h2.h3,h4,h5 and h6 HTML elements can be used</p>
+
+      <div class="components__parts components--flex--column">
+        <h1>h1. Heading</h1>
+        <h2>h2. Heading</h2>
+        <h3>h3. Heading</h3>
+        <h4>h4. Heading</h4>
+        <h5>h5. Heading</h5>
+        <h6>h6. Heading</h6>
+      </div>
+
+      <!-- Snippet for Responsive image -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+               <!-- Script for headings -->
+        <h1>h1. Heading</h1>
+        <h2>h2. Heading</h2>
+        <h3>h3. Heading</h3>
+        <h4>h4. Heading</h4>
+        <h5>h5. Heading</h5>
+        <h6>h6. Heading</h6>
+        </script>
+      </div>
+
+      <p>
+        <span>
+          <span><b>.h1</b> </span>
+          <span><b>.h2</b> </span>
+          <span><b>.h3</b> </span>
+          <span><b>.h3</b> </span>
+          <span><b>.h5</b> </span>
+          <span><b>.h6</b> </span> are also available, for when you want to match the font styling of a heading but
+          cannot use the associated HTML element.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <p class="h1">h1. heading</p>
+        <p class="h2">h2. heading</p>
+        <p class="h3">h3. heading</p>
+        <p class="h4">h4. heading</p>
+        <p class="h5">h5. heading</p>
+        <p class="h6">h6. heading</p>
+      </div>
+
+
+      <!-- Snippet for Responsive image -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+        <!-- Script for headings -->
+        <p class="h1">h1. heading</p>
+        <p class="h2">h2. heading</p>
+        <p class="h3">h3. heading</p>
+        <p class="h4">h4. heading</p>
+        <p class="h5">h5. heading</p>
+        <p class="h6">h6. heading</p>
+        </script>
+      </div>
+
+      <h3>Text Sizes</h3>
+      <p>For different text sizes, following classes can be used</p>
+      <span>
+        <span><b>p--large </b></span>
+        <span><b>p--regular </b></span>
+        <span><b>p--medium </b></span>
+        <span><b>p--small </b></span>
+      </span>
+      <div class="components__parts components--flex--column">
+        <p class="p--large">p. large</p>
+        <p class="p--regular">p. regular</p>
+        <p class="p--medium">p. medium</p>
+        <p class="p--small">p. small</p>
+      </div>
+
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Script for different text sizes -->
+        <p class="p--large">p. large</p>
+        <p class="p--regular">p. regular</p>
+        <p class="p--medium">p. medium</p>
+        <p class="p--small">p. small</p>
+        </script>
+      </div>
+
+      <h3>Text Position</h3>
+
+      <p>For different text alignments, following classes can be used</p>
+      <span>
+        <span><b>text--left </b></span>
+        <span><b>text--right </b></span>
+        <span><b>text--center</b></span>
+      </span>
+
+      <div class="components__parts components--flex--column">
+        <p class="text--left">Text left</p>
+        <p class="text--right">Text right</p>
+        <p class="text--center">Text center</p>
+      </div>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Script for different text positions -->
+        <p class="text--left">Text left</p>
+        <p class="text--right">Text right</p>
+        <p class="text--center">Text center</p>
+        </script>
+      </div>
+
+
+      <h3>Colored Text</h3>
+
+      <p>For different text colors, following classes can be used</p>
+      <span>
+        <span><b>text--primary</b></span>
+        <span><b>text--secondary </b></span>
+        <span><b>text--tertiary</b></span>
+      </span>
+      <div class="components__parts components--flex--column">
+        <p class="text--primary"> Text with primary color</p>
+        <p class="text--secondary">Text with secondary color</p>
+        <p class="text--tertiary">Text with Tertiary color</p>
+      </div>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Script for different colored texts -->
+        <p class="text--primary"> Text with primary color</p>
+        <p class="text--secondary">Text with secondary color</p>
+        <p class="text--tertiary">Text with Tertiary color</p>
+        </script>
+      </div>
+
+    </div>
+    <!-- typography ends -->
+    <hr />
+    <!-- lists starts -->
+    <div class="components" id="lists">
+      <h2 class="component__heading">Lists</h2>
+      <p class="component__sub-heading">
+        Related items can be grouped in to lists
+      </p>
+
+      <h3>Spaced Lists</h3>
+      <div class="components__parts ">
+        <div class="components__list">
+          <span>Unordered List</span>
+          <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+          </ul>
+        </div>
+
+        <div class="components__list">
+          <span>Ordered List</span>
+          <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+          </ol>
+        </div>
+
+        <div class="components__list">
+          <span>Description list</span>
+          <dl>
+            <dt>list item 1</li>
+            <dd>first item of list</dd>
+            <dt>list item 2</li>
+            <dd>second item of list</dd>
+          </dl>
+        </div>
+      </div>
+
+      <span>
+        <span><b>components__parts</b>(for aligning multiple lists with space between them)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+        <!-- Script for different spaced lists -->
+        <div class="components__parts ">
+          <div class="components__list">
+            <span>Unordered List</span>
+            <ul>
+              <li>list item 1</li>
+              <li>list item 2</li>
+              <li>list item 3</li>
+              <li>list item 4</li>
+            </ul>
+          </div>
+
+          <div class="components__list">
+            <span>Ordered List</span>
+            <ol>
+              <li>list item 1</li>
+              <li>list item 2</li>
+              <li>list item 3</li>
+              <li>list item 4</li>
+            </ol>
+          </div>
+
+          <div class="components__list">
+            <span>Description list</span>
+            <dl>
+              <dt>list item 1</li>
+              <dd>first item of list</dd>
+              <dt>list item 2</li>
+              <dd>second item of list</dd>
+            </dl>
+          </div>
+        </div>
+        </script>
+      </div>
+
+
+
+      <h3>Stacked Lists</h3>
+      <p> We can add desired component inside "li" element. Check below code for notifications in stacked list.</p>
+      <div class="components__parts ">
+
+        <ul class="components__stacked-list">
+          <li><span><i class="far fa-check-circle"></i></span>Success notification</li>
+          <li><span><i class="fas fa-exclamation-circle"></i></span>Warning notification</li>
+          <li><span><i class="fas fa-info-circle"></i></span>Info notification</li>
+        </ul>
+
+      </div>
+
+      <span>
+        <span><b>components__stacked-list</b>(for styling each list item)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+        <!-- Script for different stacked lists -->
+        <ul class="components__stacked-list">
+          <li><span><i class="far fa-check-circle"></i></span>Success notification</li>
+          <li><span><i class="fas fa-exclamation-circle"></i></span>Warning notification</li>
+          <li><span><i class="fas fa-info-circle"></i></span>Info notification</li>
+        </ul>
+        </script>
+      </div>
+
+    </div>
+    <!-- lists ends -->
+    <hr />
+    <!-- navigation starts -->
     <div class="components" id="navigation">
       <h2 class="component__heading">Navigation</h2>
       <p class="component__sub-heading">
@@ -639,9 +1156,8 @@
         </nav>
         </script>
       </div>
-
     </div>
-
+    <!-- navigation ends -->
     <hr />
   </main>
   <footer></footer>

@@ -9,6 +9,9 @@
 @import "../components/input/input.css";
 @import "../homepage/homepage.css";
 @import "../components/navigation/navigation.css";
+@import "../components/typography/typography.css";
+@import "../components/lists/lists.css";
+@import "../components/cards/cards.css";
 
 
 * {
@@ -91,7 +94,6 @@ body {
 .sidebar__parent {
   position: relative;
 }
-
 /* sidebar end */
 
 /* Components start */
@@ -177,7 +179,6 @@ h2.component__heading {
   font-weight: 400;
   line-height: 1.5rem;
 }
-
 /* Components end */
 
 /* footer start */

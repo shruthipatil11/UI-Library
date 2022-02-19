@@ -45,11 +45,6 @@
   border-color: var(--INFO-BORDER);
 }
 
-.alert span,
-.btn__icon span {
-  margin-right: 1rem;
-}
-
 .alert span {
   margin-right: 1rem;
 }
