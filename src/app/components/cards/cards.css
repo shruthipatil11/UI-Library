@@ -16,7 +16,6 @@
 
 .card__image {
   max-width: 18rem;
-  /* min-width: 20rem; */
 }
 
 .card__badge figure span {
@@ -44,7 +43,6 @@
 
 .card__image {
   max-width: 18rem;
-  /* min-width: 20rem; */
 }
 
 .card--horizontal {
@@ -94,6 +92,7 @@
 .card--text-overlay .text-overlay {
   position: absolute;
   top: 0%;
+  bottom: 0%;
   padding: 13px;
   background-color: var(--TEXT-OVERLAY-BG);
   width: 100%;
@@ -106,5 +105,5 @@
 }
 
 .card .card--align-items {
-  padding-bottom:0.8rem;
+  padding-bottom: 0.8rem;
 }
