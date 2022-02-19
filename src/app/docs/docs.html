@@ -1,609 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="UI Components" />
-    <meta name="author" content="Shruti" />
-    <title>Document</title>
-    <link rel="stylesheet" href="docs.css" />
-    <link rel="stylesheet" href="../../assets/css/prism.css" />
 
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/2eb14ab3c6.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UI Components docs page" />
+  <meta name="author" content="Shruti" />
+  <title>Document</title>
+  <link rel="stylesheet" href="docs.css" />
+  <link rel="stylesheet" href="../../assets/css/prism.css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2eb14ab3c6.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <header class="header">
-      <nav>
-        <ul class="navbar">
-          <li>
-            <img src="../../assets/images/ui-logo.jpg" alt="project icon" />
-          </li>
-          <!-- <li>UI-Ingredients</li> -->
-          <ul class="navbar__sub-heading">
-            <li>Home</li>
-            <li>Documentation</li>
-          </ul>
-          <li class="navbar__social"><i class="fab fa-github"></i></li>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="../../../index.html"><img src="../../assets/images/ui-logo.jpg" alt="project icon" /></a>
+        </li>
+        <li>UI-Ingredients</li>
+        <ul class="navbar__sub-heading">
+          <li><a href="../../../index.html">Home</a></li>
+          <li>Documentation</li>
         </ul>
-      </nav>
-    </header>
+        <li class="navbar__social"><a href="https://github.com/shruthipatil11/UI-Library" target="_blank"><i
+              class="fab fa-github"></i></a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <aside class="sidebar__parent">
-      <div class="sidebar d-flex-col">
-        <h2>Components</h2>
-        <ul class="d-flex-col">
-          <li><a href="#avatar">Avatar</a></li>
-          <li><a href="#badge">Badge</a></li>
-          <li><a href="#alert">Alert</a></li>
-          <li><a href="#button">Button</a></li>
-          <li><a href="#card">Card</a></li>
-          <li><a href="#image">Image</a></li>
-          <li><a href="#input">Input</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#navigation">Navigation</a></li>
-        </ul>
+  <aside class="sidebar__parent">
+    <div class="sidebar d-flex-col">
+      <h2>Get Started</h2>
+      <ul>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+      <h2>Components</h2>
+      <ul class="d-flex-col">
+        <li><a href="#avatar">Avatar</a></li>
+        <li><a href="#badge">Badge</a></li>
+        <li><a href="#alert">Alert</a></li>
+        <li><a href="#button">Button</a></li>
+        <li><a href="#card">Card</a></li>
+        <li><a href="#image">Image</a></li>
+        <li><a href="#input">Input</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="components__wrapper">
+    <!-- usage starts -->
+    <section class="components" id="usage">
+      <h2 class="component__heading">Usage</h2>
+      <p class="component__sub-heading">
+        These components css can be directly used by either importing it in
+        css file or link to it from your html file.
+      </p>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- HTML -->
+        <link rel="stylesheet" href="https://abc.netlify.app/...">
+
+        <!-- CSS -->
+        @import url("https://abc.netlify.app...");
+        </script>
       </div>
-    </aside>
-
-    <main class="components__wrapper">
-      <!-- Avatar starts-->
-
-      <section class="components" id="avatar">
-        <h2 class="component__heading">Avatar</h2>
-        <p class="component__sub-heading">
-          An avatar is a personalized graphical illustration that represents a
-          computer user, or a character or alter ego that represents that user.
-        </p>
-        <h3>Standard Avatars</h3>
-        <div class="components__parts">
-          <figure class="avatar avatar--xl">
-            <img src="../../assets/images/avatar-1.png" alt="avatar profile" />
-          </figure>
-          <figure class="avatar avatar--lg">
-            <img src="../../assets/images/avatar-2.png" alt="avatar profile" />
-          </figure>
-          <figure class="avatar avatar--std">
-            <img src="../../assets/images/avatar-3.png" alt="avatar profile" />
-          </figure>
-          <figure class="avatar avatar--sm">
-            <img src="../../assets/images/avatar-4.jpg" alt="avatar profile" />
-          </figure>
-          <figure class="avatar avatar--xs">
-            <img src="../../assets/images/avatar-5.jpg" alt="avatar profile" />
-          </figure>
-        </div>
-        <p>The avatar component has 5 sizes:</p>
-        <span>
-          <span><b>avatar-xl </b> (9rem) </span>
-          <span> <b>avatar-lg </b> (7rem) </span>
-          <span><b>avatar-std </b> (5rem)</span>
-          <span><b>avatar-sm </b> (4rem), and</span>
-          <span><b>avatar-xs </b> (2rem) .</span>
-        </span>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+    </section>
+    <!-- usage ends -->
+    <!-- Avatar starts-->
+    <section class="components" id="avatar">
+      <h2 class="component__heading">Avatar</h2>
+      <p class="component__sub-heading">
+        An avatar is a personalized graphical illustration that represents a
+        computer user, or a character or alter ego that represents that user.
+      </p>
+      <h3>Standard Avatars</h3>
+      <div class="components__parts">
+        <figure class="avatar avatar--xl">
+          <img src="../../assets/images/avatar-1.png" alt="avatar profile" />
+        </figure>
+        <figure class="avatar avatar--lg">
+          <img src="../../assets/images/avatar-2.png" alt="avatar profile" />
+        </figure>
+        <figure class="avatar avatar--std">
+          <img src="../../assets/images/avatar-3.png" alt="avatar profile" />
+        </figure>
+        <figure class="avatar avatar--sm">
+          <img src="../../assets/images/avatar-4.jpg" alt="avatar profile" />
+        </figure>
+        <figure class="avatar avatar--xs">
+          <img src="../../assets/images/avatar-5.jpg" alt="avatar profile" />
+        </figure>
+      </div>
+      <p>The avatar component has 5 sizes:</p>
+      <span>
+        <span><b>avatar-xl </b> (9rem) </span>
+        <span> <b>avatar-lg </b> (7rem) </span>
+        <span><b>avatar-std </b> (5rem)</span>
+        <span><b>avatar-sm </b> (4rem), and</span>
+        <span><b>avatar-xs </b> (2rem) .</span>
+      </span>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!--  avatar--xl  -->
-            <figure class="avatar avatar--xl">
-              <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
-            </figure>
+        <figure class="avatar avatar--xl">
+          <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
+        </figure>
 
-            <!--  avatar--lg  -->
-            <figure class="avatar avatar--lg">
-              <img src="../../assets/images/avatar-2.png" alt="avatar profile is not available" />
-            </figure>
+        <!--  avatar--lg  -->
+        <figure class="avatar avatar--lg">
+          <img src="../../assets/images/avatar-2.png" alt="avatar profile is not available" />
+        </figure>
 
-            <!--   avatar--std  -->
-            <figure class="avatar avatar--std">
-              <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
-            </figure>
+        <!--   avatar--std  -->
+        <figure class="avatar avatar--std">
+          <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
+        </figure>
 
-            <!--   avatar--sm  -->
-            <figure class="avatar avatar--sm">
-              <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
-            </figure>
+        <!--   avatar--sm  -->
+        <figure class="avatar avatar--sm">
+          <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
+        </figure>
 
-            <!--   avatar--xs  -->
-            <figure class="avatar avatar--xs">
-              <img src="../../assets/images/avatar-5.jpg" alt="avatar profile is not available" />
-            </figure>
-          </script>
-        </div>
-      </section>
+        <!--   avatar--xs  -->
+        <figure class="avatar avatar--xs">
+          <img src="../../assets/images/avatar-5.jpg" alt="avatar profile is not available" />
+        </figure>
+        </script>
+      </div>
+    </section>
 
-      <!-- Avatar ends -->
+    <!-- Avatar ends -->
 
-      <hr />
+    <hr />
 
-      <!-- Badge starts-->
+    <!-- Badge starts-->
 
-      <section class="components" id="badge">
-        <h2 class="component__heading">Badge</h2>
-        <p class="component__sub-heading">
-          Badges are used to add additional information to any content like
-          notification count or status information.
-        </p>
+    <section class="components" id="badge">
+      <h2 class="component__heading">Badge</h2>
+      <p class="component__sub-heading">
+        Badges are used to add additional information to any content like
+        notification count or status information.
+      </p>
 
-        <h3>Badge on Avatars</h3>
-        <div class="components__parts">
-          <figure class="avatar avatar--xl badge badge--online">
-            <img
-              src="../../assets/images/avatar-3.png"
-              alt="avatar profile is not available"
-            />
-            <span></span>
-          </figure>
-          <figure class="avatar avatar--lg badge badge--dnd">
-            <img
-              src="../../assets/images/avatar-1.png"
-              alt="avatar profile is not available"
-            />
-            <span></span>
-          </figure>
-          <figure class="avatar avatar--std badge badge--offline">
-            <img
-              src="../../assets/images/avatar-4.jpg"
-              alt="avatar profile is not available"
-            />
-            <span></span>
-          </figure>
-        </div>
-        <p>The badges to represent the availability status:</p>
-        <span>
-          <span><b>badge--online </b>(green color)</span>
-          <span><b>badge--dnd </b>(red color)</span>
-          <span><b>badge--offline </b>(gray color)</span>
-        </span>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <h3>Badge on Avatars</h3>
+      <div class="components__parts">
+        <figure class="avatar avatar--xl badge badge--online">
+          <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
+        <figure class="avatar avatar--lg badge badge--dnd">
+          <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
+        <figure class="avatar avatar--std badge badge--offline">
+          <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
+      </div>
+      <p>The badges to represent the availability status:</p>
+      <span>
+        <span><b>badge--online </b>(green color)</span>
+        <span><b>badge--dnd </b>(red color)</span>
+        <span><b>badge--offline </b>(gray color)</span>
+      </span>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- badge--online -->
-            <figure class="avatar avatar--xl badge badge--online">
-              <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
-              <span></span>
-            </figure>
+        <figure class="avatar avatar--xl badge badge--online">
+          <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
 
-            <!-- badge--dnd -->
-            <figure class="avatar avatar--lg badge badge--dnd">
-              <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
-              <span></span>
-            </figure>
+        <!-- badge--dnd -->
+        <figure class="avatar avatar--lg badge badge--dnd">
+          <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
 
-            <!-- badge--offline -->
-            <figure class="avatar avatar--std badge badge--offline">
-              <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
-              <span></span>
-            </figure>
-          </script>
-        </div>
+        <!-- badge--offline -->
+        <figure class="avatar avatar--std badge badge--offline">
+          <img src="../../assets/images/avatar-4.jpg" alt="avatar profile is not available" />
+          <span></span>
+        </figure>
+        </script>
+      </div>
 
-        <h3>Badge on Icons</h3>
-        <div class="components__parts">
-          <figure class="badge badge__count">
-            <i class="far fa-heart fa-2x"></i>
-            <span class="d-flex-center">5</span>
-          </figure>
+      <h3>Badge on Icons</h3>
+      <div class="components__parts">
+        <figure class="badge badge__count">
+          <i class="far fa-heart fa-2x"></i>
+          <span class="d-flex-center">5</span>
+        </figure>
 
-          <figure class="badge badge__count">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-            <span class="d-flex-center">11</span>
-          </figure>
-        </div>
-        <p>
-          The badges to represent the count. You can use class :
-          <b>badge__count</b>
-        </p>
+        <figure class="badge badge__count">
+          <i class="fas fa-shopping-cart fa-2x"></i>
+          <span class="d-flex-center">11</span>
+        </figure>
+      </div>
+      <p>
+        The badges to represent the count. You can use class :
+        <b>badge__count</b>
+      </p>
 
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
 
             <!-- badge__count -->
-            <figure class="badge badge__count">
-              <i class="far fa-heart fa-2x"></i>
-              <span class="d-flex-center">5</span>
-            </figure>
+        <figure class="badge badge__count">
+          <i class="far fa-heart fa-2x"></i>
+          <span class="d-flex-center">5</span>
+        </figure>
 
-            <figure class="badge badge__count">
-              <i class="fas fa-shopping-cart fa-2x"></i>
-              <span class="d-flex-center">11</span>
-            </figure>
-          </script>
+        <figure class="badge badge__count">
+          <i class="fas fa-shopping-cart fa-2x"></i>
+          <span class="d-flex-center">11</span>
+        </figure>
+        </script>
+      </div>
+    </section>
+
+    <!-- Badge ends -->
+
+    <hr />
+
+    <!-- Alerts starts-->
+
+    <section class="components" id="alert">
+      <h2 class="component__heading">Alerts</h2>
+      <p class="component__sub-heading">
+        Alert messages can be used to notify the user about something special:
+        danger, success, information or warning without interrupting the
+        user's flow.
+      </p>
+      <div class="components__parts components--flex--column">
+        <div class="alert alert--primary" role="alert">
+          A primary alert with text link <a href="#">Check it out!</a>
         </div>
-      </section>
-
-      <!-- Badge ends -->
-
-      <hr />
-
-      <!-- Alerts starts-->
-
-      <section class="components" id="alert">
-        <h2 class="component__heading">Alerts</h2>
-        <p class="component__sub-heading">
-          Alert messages can be used to notify the user about something special:
-          danger, success, information or warning without interrupting the
-          user's flow.
-        </p>
-        <div class="components__parts components--flex--column">
-          <div class="alert alert--primary" role="alert">
-            A primary alert with text link <a href="#">Check it out!</a>
-          </div>
-          <div class="alert alert--secondary" role="alert">
-            A secondary alert
-          </div>
-          <div class="alert alert--success" role="alert">
-            <span><i class="far fa-check-circle"></i></span>A success alert
-          </div>
-          <div class="alert alert--danger" role="alert">
-            <span><i class="fas fa-exclamation-triangle"></i></span>A danger
-            alert
-          </div>
-          <div class="alert alert--warning" role="alert">
-            <span><i class="fas fa-exclamation-circle"></i></span>A warning
-            alert
-          </div>
-          <div class="alert alert--info" role="alert">
-            <span><i class="fas fa-info-circle"></i></span>A info alert
-          </div>
+        <div class="alert alert--secondary" role="alert">
+          A secondary alert
         </div>
-        <p>
-          Alerts are available for any length of text. For proper styling, use
-          one of the seven required contextual classes
-        </p>
-        <span>
-          <span><b>alert--primary</b></span>
-          <span><b>alert--secondary </b></span>
-          <span><b>alert--success </b></span>
-          <span><b>alert--danger </b></span>
-          <span><b>alert--warning </b></span>
-          <span><b>alert--info </b></span>
-        </span>
+        <div class="alert alert--success" role="alert">
+          <span><i class="far fa-check-circle"></i></span>A success alert
+        </div>
+        <div class="alert alert--danger" role="alert">
+          <span><i class="fas fa-exclamation-triangle"></i></span>A danger
+          alert
+        </div>
+        <div class="alert alert--warning" role="alert">
+          <span><i class="fas fa-exclamation-circle"></i></span>A warning
+          alert
+        </div>
+        <div class="alert alert--info" role="alert">
+          <span><i class="fas fa-info-circle"></i></span>A info alert
+        </div>
+      </div>
+      <p>
+        Alerts are available for any length of text. For proper styling, use
+        one of the seven required contextual classes
+      </p>
+      <span>
+        <span><b>alert--primary</b></span>
+        <span><b>alert--secondary </b></span>
+        <span><b>alert--success </b></span>
+        <span><b>alert--danger </b></span>
+        <span><b>alert--warning </b></span>
+        <span><b>alert--info </b></span>
+      </span>
 
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Primary alert -->
-            <div class="alert alert--primary " role="alert">
-               A primary alert with text link <a href="#">Check it out!</a>
-             </div>
-
-             <!-- Secondary alert -->
-             <div class="alert alert--secondary" role="alert">A secondary alert</div>
-
-             <!-- Success alert -->
-             <div class="alert alert--success">
-               <span><i class="far fa-check-circle"></i></span>A success alert
-             </div>
-
-             <!-- Danger alert -->
-             <div class="alert alert--danger" role="alert">
-               <span><i class="fas fa-exclamation-triangle"></i></span>A danger
-               alert
-             </div>
-
-             <!-- Warning alert -->
-             <div class="alert alert--warning" role="alert">
-               <span><i class="fas fa-exclamation-circle"></i></span>A warning
-               alert
-             </div>
-
-             <!-- Info alert -->
-             <div class="alert alert--info" role="alert">
-               <span><i class="fas fa-info-circle"></i></span>A info alert
-             </div>
-          </script>
+        <div class="alert alert--primary " role="alert">
+          A primary alert with text link <a href="#">Check it out!</a>
         </div>
-      </section>
 
-      <!-- Alerts ends -->
+        <!-- Secondary alert -->
+        <div class="alert alert--secondary" role="alert">A secondary alert</div>
 
-      <hr />
-
-      <!-- Buttons starts -->
-
-      <section class="components" id="button">
-        <h2 class="component__heading">Buttons</h2>
-        <p class="component__sub-heading">
-          Buttons have the power to compel users to convert, to carry out an
-          action. Buttons are a middleman between the user and the product, and
-          are charged with keeping the conversation between person and machine
-          going.
-        </p>
-
-        <p>The buttons are of three major types:</p>
-        <span>
-          <span><b>btn--primary </b>(for Primary action),</span>
-          <span><b>btn--secondary </b>(for Secondary action),</span>
-          <span><b>disabled </b>(for disabled button).</span>
-        </span>
-
-        <div class="components__parts">
-          <button class="btn btn--primary">Primary Button</button>
-          <button class="btn btn--secondary">Secondary Button</button>
-          <button class="btn disabled" disabled>Disabled button</button>
+        <!-- Success alert -->
+        <div class="alert alert--success">
+          <span><i class="far fa-check-circle"></i></span>A success alert
         </div>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+
+        <!-- Danger alert -->
+        <div class="alert alert--danger" role="alert">
+          <span><i class="fas fa-exclamation-triangle"></i></span>A danger
+          alert
+        </div>
+
+        <!-- Warning alert -->
+        <div class="alert alert--warning" role="alert">
+          <span><i class="fas fa-exclamation-circle"></i></span>A warning
+          alert
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert--info" role="alert">
+          <span><i class="fas fa-info-circle"></i></span>A info alert
+        </div>
+        </script>
+      </div>
+    </section>
+
+    <!-- Alerts ends -->
+
+    <hr />
+
+    <!-- Buttons starts -->
+
+    <section class="components" id="button">
+      <h2 class="component__heading">Buttons</h2>
+      <p class="component__sub-heading">
+        Buttons have the power to compel users to convert, to carry out an
+        action. Buttons are a middleman between the user and the product, and
+        are charged with keeping the conversation between person and machine
+        going.
+      </p>
+
+      <p>The buttons are of three major types:</p>
+      <span>
+        <span><b>btn--primary </b>(for Primary action),</span>
+        <span><b>btn--secondary </b>(for Secondary action),</span>
+        <span><b>disabled </b>(for disabled button).</span>
+      </span>
+
+      <div class="components__parts">
+        <button class="btn btn--primary">Primary Button</button>
+        <button class="btn btn--secondary">Secondary Button</button>
+        <button class="btn disabled" disabled>Disabled button</button>
+      </div>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Button Types -->
-            <button class="btn btn--primary">Primary Button</button>
-            <button class="btn btn--secondary">Secondary Button</button>
-            <button class="btn  disabled" disabled>
-              Disabled button
-            </button>
-          </script>
-        </div>
+        <button class="btn btn--primary">Primary Button</button>
+        <button class="btn btn--secondary">Secondary Button</button>
+        <button class="btn  disabled" disabled>
+          Disabled button
+        </button>
+        </script>
+      </div>
 
-        <h3>Outlined Buttons</h3>
-        <div class="components__parts">
-          <button class="btn btn--outlined btn--primary">Primary Button</button>
-          <button class="btn btn--outlined btn--secondary">
-            Secondary Button
-          </button>
-          <button class="btn btn--outlined disabled" disabled>
-            Disabled button
-          </button>
-        </div>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <h3>Outlined Buttons</h3>
+      <div class="components__parts">
+        <button class="btn btn--outlined btn--primary">Primary Button</button>
+        <button class="btn btn--outlined btn--secondary">
+          Secondary Button
+        </button>
+        <button class="btn btn--outlined disabled" disabled>
+          Disabled button
+        </button>
+      </div>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Outlined Buttons -->
-            <button class="btn btn--outlined btn--primary">Primary Button</button>
-            <button class="btn btn--outlined btn--secondary">
-              Secondary Button
-            </button>
-            <button class="btn btn--outlined disabled" disabled>
-              Disabled button
-            </button>
-          </script>
-        </div>
+        <button class="btn btn--outlined btn--primary">Primary Button</button>
+        <button class="btn btn--outlined btn--secondary">
+          Secondary Button
+        </button>
+        <button class="btn btn--outlined disabled" disabled>
+          Disabled button
+        </button>
+        </script>
+      </div>
 
-        <h3>Link</h3>
-        <div class="components__parts">
-          <a href="#" role="button" class="link">Primary Link</a>
-          <a class="link disabled" role="button" aria-disabled="true">
-            Link Disabled</a
-          >
-        </div>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <h3>Link</h3>
+      <div class="components__parts">
+        <a href="#" role="button" class="link">Primary Link</a>
+        <a class="link disabled" role="button" aria-disabled="true">
+          Link Disabled</a>
+      </div>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Links -->
-            <a href="#" role="button" class="link">Primary Link</a>
-            <a  class="link disabled"  role="button" aria-disabled="true" > Link Disabled</a>
-          </script>
-        </div>
+        <a href="#" role="button" class="link">Primary Link</a>
+        <a class="link disabled" role="button" aria-disabled="true"> Link Disabled</a>
+        </script>
+      </div>
 
-        <h3>Icon buttons with label</h3>
-        <div class="components__parts">
-          <button class="btn btn--primary flex-center">
-            <span> <i class="fas fa-shopping-cart"></i></span>Add
-          </button>
-          <button class="btn btn--secondary flex-center">
-            <span> <i class="fas fa-trash"></i></span>Delete
-          </button>
-        </div>
-        <p></p>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <h3>Icon buttons with label</h3>
+      <div class="components__parts">
+        <button class="btn btn--primary flex-center">
+          <span> <i class="fas fa-shopping-cart"></i></span>Add
+        </button>
+        <button class="btn btn--secondary flex-center">
+          <span> <i class="fas fa-trash"></i></span>Delete
+        </button>
+      </div>
+      <p></p>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Icon buttons with label -->
-            <button class="btn btn--primary flex-center">
-              <span> <i class="fas fa-shopping-cart"></i></span>Add
-            </button>
-            <button class="btn btn--secondary flex-center">
-              <span> <i class="fas fa-trash"></i></span>Delete
-            </button>
-          </script>
-        </div>
+        <button class="btn btn--primary flex-center">
+          <span> <i class="fas fa-shopping-cart"></i></span>Add
+        </button>
+        <button class="btn btn--secondary flex-center">
+          <span> <i class="fas fa-trash"></i></span>Delete
+        </button>
+        </script>
+      </div>
 
-        <h3>Floating Button</h3>
-        <div class="components__parts">
-          <button class="btn__floating">
-            <i class="fas fa-plus-circle fa-2x"></i>
-          </button>
-          <button class="btn__floating">
-            <i class="fas fa-arrow-up"></i>
-          </button>
-        </div>
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <h3>Floating Button</h3>
+      <div class="components__parts">
+        <button class="btn__floating">
+          <i class="fas fa-plus-circle fa-2x"></i>
+        </button>
+        <button class="btn__floating">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Floating Buttons -->
-            <button hre="#" role="button" class="btn__floating"><i class="fas fa-plus-circle fa-2x"></i></button>
-            <button hre="#" role="button" class="btn__floating">  <i class="fas fa-arrow-up"></i></button>
-          </script>
-        </div>
-      </section>
+        <button hre="#" role="button" class="btn__floating"><i class="fas fa-plus-circle fa-2x"></i></button>
+        <button hre="#" role="button" class="btn__floating"> <i class="fas fa-arrow-up"></i></button>
+        </script>
+      </div>
+    </section>
 
-      <!-- Buttons ends -->
+    <!-- Buttons ends -->
 
-      <hr />
+    <hr />
 
-      <!-- images start-->
-      <div class="components" id="image">
-        <h2 class="component__heading">Responsive images</h2>
-        <p>
-          Images are made responsive with .image--responsive . This applies
-          max-width: 100% and height: auto to the image so that it scales with
-          the parent width.
-        </p>
-        <h3>Responsive Image</h3>
-        <div class="components__parts">
-          <figure class="image-container">
-            <img
-              class="image--responsive"
-              src="../../assets/images/image-responsive.jpg"
-              alt="Responsive image"
-            />
-          </figure>
-        </div>
+    <!-- images start-->
+    <div class="components" id="image">
+      <h2 class="component__heading">Responsive images</h2>
+      <p>
+        Images are made responsive with .image--responsive . This applies
+        max-width: 100% and height: auto to the image so that it scales with
+        the parent width.
+      </p>
+      <h3>Responsive Image</h3>
+      <div class="components__parts">
+        <figure class="image-container">
+          <img class="image--responsive" src="../../assets/images/image-responsive.jpg" alt="Responsive image" />
+        </figure>
+      </div>
 
-        <span>
-          Class Modifier:
-          <span><b>image-container</b> (apply on parent container)</span>
-          <span><b>image--responsive</b> (apply on image itself)</span>
-        </span>
+      <span>
+        Class Modifier:
+        <span><b>image-container</b> (apply on parent container)</span>
+        <span><b>image--responsive</b> (apply on image itself)</span>
+      </span>
 
-        <!-- Snippet for Responsive image -->
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <!-- Snippet for Responsive image -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Snippet for Responsive image -->
-            <figure class="image-container">
-              <img class="image--responsive" src="..." alt="Responsive image" />
-            </figure>
-          </script>
-        </div>
+        <figure class="image-container">
+          <img class="image--responsive" src="..." alt="Responsive image" />
+        </figure>
+        </script>
+      </div>
 
-        <h3>Round Image</h3>
-        <div class="components__parts">
-          <figure class="image-container image--round">
-            <img
-              class="image--responsive"
-              src="../../assets/images/image-responsive.jpg"
-              alt="Responsive Round image"
-            />
-          </figure>
-        </div>
+      <h3>Round Image</h3>
+      <div class="components__parts">
+        <figure class="image-container image--round">
+          <img class="image--responsive" src="../../assets/images/image-responsive.jpg" alt="Responsive Round image" />
+        </figure>
+      </div>
 
-        <span>
-          Class Modifier:
-          <span><b>image--round</b>(apply on container)</span>
-        </span>
+      <span>
+        Class Modifier:
+        <span><b>image--round</b>(apply on container)</span>
+      </span>
 
-        <!-- Snippet for Responsive Round image -->
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <!-- Snippet for Responsive Round image -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Snippet for Responsive Round image -->
-            <figure class="image-container image--round">
-              <img class="image--responsive" src="..." alt="Responsive Round image" />
-            </figure>
-          </script>
+        <figure class="image-container image--round">
+          <img class="image--responsive" src="..." alt="Responsive Round image" />
+        </figure>
+        </script>
+      </div>
+    </div>
+
+    <!-- images ends -->
+
+    <hr />
+
+    <!-- Input starts -->
+    <div class="components" id="input">
+      <h2 class="component__heading">Input</h2>
+      <p class="component__sub-heading">
+        Input element is used to create interactive controls in order to
+        accept data from the user.
+      </p>
+
+      <h3>Standard Input</h3>
+      <div class="components__parts">
+        <div class="input-field">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
         </div>
       </div>
 
-      <!-- images ends -->
+      <span>
+        Class Modifier:
+        <span><b>input-field</b> (apply on parent container)</span>
+        <span><b>input__label</b> (apply on label)</span>
+      </span>
 
-      <hr />
-
-      <!-- Input starts -->
-      <div class="components" id="input">
-        <h2 class="component__heading">Input</h2>
-        <p class="component__sub-heading">
-          Input element is used to create interactive controls in order to
-          accept data from the user.
-        </p>
-
-        <h3>Standard Input</h3>
-        <div class="components__parts">
-          <div class="input-field">
-            <input type="text" name="inputText" />
-            <span class="input__label">Label</span>
-          </div>
-        </div>
-
-        <span>
-          Class Modifier:
-          <span><b>input-field</b> (apply on parent container)</span>
-          <span><b>input__label</b> (apply on label)</span>
-        </span>
-
-        <!-- Snippet for Responsive image -->
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
+      <!-- Snippet for Responsive image -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
             <!-- Snippet for Input -->
-            <div class="input-field">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-          </script>
+        <div class="input-field">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
         </div>
+        </script>
+      </div>
 
-        <h3>Input with validations</h3>
-        <div class="components__parts components--flex--column">
-          <div class="input-field input--success">
-            <input type="text" name="inputText" />
-            <span class="input__label">Label</span>
-          </div>
-          <div class="input-field input--warn">
-            <input type="text" name="inputText" />
-            <span class="input__label">Label</span>
-          </div>
-          <div class="input-field input--error">
-            <input type="text" name="inputText" />
-            <span class="input__label">Label</span>
-          </div>
+      <h3>Input with validations</h3>
+      <div class="components__parts components--flex--column">
+        <div class="input-field input--success">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
         </div>
-
-        <span>
-          Class Modifier:
-          <span><b>input--success</b> (after successfull validation)</span>
-          <span><b>input--error</b> (error after validation)</span>
-          <span><b>input--warn</b> (warning after validation)</span>
-        </span>
-
-        <!-- Snippet for Responsive image -->
-        <div class="code-Snippet">
-          <script
-            type="text/plain"
-            class="line-numbers language-css snippet_container__script"
-          >
-            <!-- Snippet for Input Validation -->
-            <div class="input-field input--success">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-            <div class="input-field input--warn">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-            <div class="input-field input--error">
-              <input type="text" name="inputText" />
-              <span class="input__label">Label</span>
-            </div>
-          </script>
+        <div class="input-field input--warn">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
+        </div>
+        <div class="input-field input--error">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
         </div>
       </div>
-      <!-- input ends -->
 
-      <hr />
-    </main>
-    <footer></footer>
-    <script src="../../assets/js/prism.js"></script>
-  </body>
+      <span>
+        Class Modifier:
+        <span><b>input--success</b> (after successfull validation)</span>
+        <span><b>input--error</b> (error after validation)</span>
+        <span><b>input--warn</b> (warning after validation)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Snippet for Input Validation -->
+        <div class="input-field input--success">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
+        </div>
+        <div class="input-field input--warn">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
+        </div>
+        <div class="input-field input--error">
+          <input type="text" name="inputText" />
+          <span class="input__label">Label</span>
+        </div>
+        </script>
+      </div>
+    </div>
+    <!-- input ends -->
+    <hr />
+
+    <div class="components" id="navigation">
+      <h2 class="component__heading">Navigation</h2>
+      <p class="component__sub-heading">
+        Navigation bar is used to navigate through the web apps or websites.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <nav>
+          <ul class="navbar navbar--background">
+            <li>
+              <img src="../../assets/images/ui-logo.jpg" alt="project icon" />
+            </li>
+            <li class="search-box">
+              <div>
+                <input type="text" name="search" placeholder="search" /><i class="fas fa-search"></i>
+              </div>
+            </li>
+            <li>
+              <figure class="badge badge__count">
+                <i class="far fa-heart fa-2x"></i>
+                <span class="d-flex-center">5</span>
+              </figure>
+            </li>
+            <li>
+              <figure class="badge badge__count">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="d-flex-center">11</span>
+              </figure>
+            </li>
+            <li>
+              <button class="btn btn--primary">Logout</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <span>
+        Below classes can be used on list container and replace with your components inside li element.You can reuse
+        badges,images and other components.
+        <span>Class Modifier: <b>navbar</b> (apply on list container)</span>
+        <span><b>navbar--background</b> (apply desired background on list container)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+        <!-- Script for navigation -->
+        <nav>
+          <ul class="navbar navbar--background">
+            <li>
+              <img src="../../assets/images/ui-logo.jpg" alt="project icon" />
+            </li>
+            <li class="search-box">
+              <div>
+                <input type="text" name="search" placeholder="search" /><i class="fas fa-search"></i>
+              </div>
+            </li>
+            <li>
+              <figure class="badge badge__count">
+                <i class="far fa-heart fa-2x"></i>
+                <span class="d-flex-center">5</span>
+              </figure>
+            </li>
+            <li>
+              <figure class="badge badge__count">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="d-flex-center">11</span>
+              </figure>
+            </li>
+            <li>
+              <button class="btn btn--primary">Logout</button>
+            </li>
+          </ul>
+        </nav>
+        </script>
+      </div>
+
+    </div>
+
+    <hr />
+  </main>
+  <footer></footer>
+  <script src="../../assets/js/prism.js"></script>
+</body>
+
 </html>

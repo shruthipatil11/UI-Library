@@ -89,3 +89,8 @@
   border: 0px;
   background-color: var(--WHITE);
 }
+
+.btn a {
+  text-decoration: none;
+  color: black;
+}

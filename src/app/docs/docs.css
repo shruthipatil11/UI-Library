@@ -7,6 +7,9 @@
 @import "../components/button/button.css";
 @import "../components/image/image.css";
 @import "../components/input/input.css";
+@import "../homepage/homepage.css";
+@import "../components/navigation/navigation.css";
+
 
 * {
   margin: 0px;
@@ -52,55 +55,6 @@ body {
 .header nav ul li:nth-child(5) {
   margin-left: auto;
 }
-
-/* navbar start */
-.navbar {
-  display: flex;
-  column-gap: 1rem;
-  align-items: center;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--GREEN-DARK);
-}
-
-.navbar li img {
-  width: 5rem;
-  height: 4rem;
-  object-fit: cover;
-}
-
-.navbar li {
-  font-size: 1.15rem;
-}
-
-.navbar > li:nth-child(2) {
-  color: var(--GREEN-DARK);
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.navbar__social {
-  margin-right: 1rem;
-  font-size: 1.5rem;
-}
-
-.navbar__sub-heading {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  column-gap: 2rem;
-}
-
-.navbar li:last-child() {
-  margin-right: 10px;
-}
-
-.navbar--background {
-  border: 1px solid var(--GREEN-DARK);
-}
-
-/* navbar end */
-
 /* header end */
 
 /* sidebar start */
@@ -225,3 +179,12 @@ h2.component__heading {
 }
 
 /* Components end */
+
+/* footer start */
+footer {
+  text-align: center;
+  width: 100vw;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+/* footer end */
