@@ -10,7 +10,7 @@
 
 ## Full Documentation
 
-Live Demo Link: https://ui-ingredients-lib.netlify.app
+Live Demo Link: https://oasis-ui-library.netlify.app
 <br>
 
 ---
@@ -28,7 +28,7 @@ There are two methods.
 ```html
 <link
   rel="stylesheet"
-  href="https://ui-ingredients-lib.netlify.app/src/app/docs/docs.css"
+  href="https://oasis-ui-library.netlify.app/src/app/docs/docs.css"
 />
 ```
 
@@ -37,7 +37,7 @@ There are two methods.
 ---
 
 ```css
-@import url("https://ui-ingredients-lib.netlify.app/src/app/docs/docs.css");
+@import url("https://oasis-ui-library.netlify.app/src/app/docs/docs.css");
 ```
 
 ### Magnificent UI contains the following Components
