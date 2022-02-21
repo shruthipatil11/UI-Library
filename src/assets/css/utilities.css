@@ -64,3 +64,16 @@ display: flex;
   margin-bottom:1rem;
   margin-top:1rem;
 }
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
