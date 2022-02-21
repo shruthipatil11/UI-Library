@@ -44,3 +44,23 @@ hr {
 .close:hover {
   opacity: 1;
 }
+
+.d-flex-wrap {
+display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.font-weight-600 {
+  font-weight:600;
+}
+
+.mb-1 {
+  margin-bottom:1rem;
+}
+
+.mt-mb-1 {
+  margin-bottom:1rem;
+  margin-top:1rem;
+}
