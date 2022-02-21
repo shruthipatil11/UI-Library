@@ -70,7 +70,7 @@ There are two methods.
 
 Use Typography to format the text of your website.
 
-You will find the following types of _Typography_ on https://ui-ingredients-lib.netlify.app/src/app/components/typography/typography.css
+You will find the following types of _Typography_
 
 > Headings
 
@@ -84,7 +84,7 @@ Alert messages can be used to notify the user about something special:
 danger, success, information or warning without interrupting the
 user's flow.
 
-You will find the following types of _Alert_ on https://ui-ingredients-lib.netlify.app/src/app/components/alert/alert.html
+You will find the following types of _Alert_
 
 > Alerts
 
@@ -101,7 +101,7 @@ You will find the following types of _Alert_ on https://ui-ingredients-lib.netli
 
 Buttons have the power to compel users to convert, to carry out an action. Buttons are a middleman between the user and the product, and are charged with keeping the conversation between person and machine going.
 
-You will find the following types of _Button_ on https://ui-ingredients-lib.netlify.app/src/app/components/button/button.html
+You will find the following types of _Button_
 
 > Standard Button
 
@@ -125,7 +125,7 @@ You will find the following types of _Button_ on https://ui-ingredients-lib.netl
 
 An avatar is a personalized graphical illustration that represents a computer user, or a character or alter ego that represents that user.
 
-You will find the following types of _Avatar_ on https://ui-ingredients-lib.netlify.app/src/app/components/avatar/avatar.html
+You will find the following types of _Avatar_
 
 > Standard Round Avatars
 
@@ -135,7 +135,7 @@ You will find the following types of _Avatar_ on https://ui-ingredients-lib.netl
 
 Badges are used to add additional information to any content like notification count or status information.
 
-You will find the following types of _Badge_ on https://ui-ingredients-lib.netlify.app/src/app/components/badge/badge.html
+You will find the following types of _Badge_
 
 > Badge with Avatars
 
@@ -147,7 +147,7 @@ You will find the following types of _Badge_ on https://ui-ingredients-lib.netli
 
 A card is a flexible and extensible content container.
 
-You will find the following types of _Card_ on https://ui-ingredients-lib.netlify.app/src/app/components/card/card.html
+You will find the following types of _Card_
 
 > Vertical Cards
 
@@ -167,7 +167,7 @@ You will find the following types of _Card_ on https://ui-ingredients-lib.netlif
 
 Image components are used to display pictures.
 
-You will find the following types of _Image_ on https://ui-ingredients-lib.netlify.app/src/app/components/image/image.html
+You will find the following types of _Image_
 
 > Responsive Image
 
@@ -179,7 +179,7 @@ You will find the following types of _Image_ on https://ui-ingredients-lib.netli
 
 Input element is used to create interactive controls in order to accept data from the user.
 
-You will find the following types of _Input_ on https://ui-ingredients-lib.netlify.app/src/app/components/input/input.html
+You will find the following types of _Input_
 
 - Standard Input
 - Input with validations
@@ -190,7 +190,7 @@ You will find the following types of _Input_ on https://ui-ingredients-lib.netli
 
 Related items can be grouped in to lists
 
-You will find the following types of _Rating_ on https://ui-ingredients-lib.netlify.app/src/app/components/lists/lists.html
+You will find the following types of _Rating_
 
 > Spaced List
 
