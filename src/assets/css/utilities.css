@@ -46,7 +46,7 @@ hr {
   right: 8px;
   top: 8px;
   /* width: 18px; */
-  color: red;
+  color: var(--RED-DARK);
   opacity: 0.5;
   cursor: pointer;
 }

@@ -52,6 +52,8 @@
         <li><a href="#modal">Modal</a></li>
         <li><a href="#rating">Rating</a></li>
         <li><a href="#toast">Toast</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#slider">slider</a></li>
 
       </ul>
     </div>
@@ -1195,6 +1197,18 @@
             <button class="btn btn--primary width-100">SEND LINK</button>
           </div>
         </div>
+
+        <!-- Javascript starts -->
+        const modal = document.querySelector(".modal");
+        const btn = document.getElementById("open-modal-btn");
+        const modalClose = document.querySelector("#modal .close");
+        btn.addEventListener("click", () => {
+        modal.classList.remove("display-none");
+        });
+        modalClose.addEventListener("click", () => {
+        modal.classList.add("display-none");
+        });
+        <!--  Javascript ends -->
         </script>
       </div>
     </div>
@@ -1262,17 +1276,161 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-          <!-- Script for rating -->
+          <!-- Script for toast -->
         <div>
           <button class="btn btn--primary" onclick="openToast()">Show Snackbar</button>
           <div id="toastMessage" class="text-center p--regular">Server is busy.Retry after 5 seconds. <span
-              class="close" onClick="closeToast()">&times</span></div>
+              class="close" onClick="closeToast()">&times</span>
+          </div>
         </div>
+
+        <!-- Javascript starts -->
+        let toastMessage = document.getElementById("toastMessage");
+        const openToast = () => {
+        toastMessage.className = "display";
+        setTimeout(() => { toastMessage.className = toastMessage.className.replace("display", ""); }, 5000);
+        }
+        const closeToast = () => {
+        toastMessage.className = toastMessage.className.replace("display", "");
+        }
+        <!-- Javascript ends -->
         </script>
       </div>
     </div>
     <!-- toast ends -->
     <hr />
+
+    <!-- grid starts -->
+    <div class="components" id="grid">
+      <h2 class="component__heading">Grid</h2>
+      <p class="component__sub-heading">
+        Grid Layout is a two-dimensional layout system.It helps to layout the page content in terms of rows and columns
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <h3 class="font-weight-600">Grid with two columns</h3>
+        <div class="grid grid-columns-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with two rows</h3>
+        <div class="grid grid-rows-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with three columns</h3>
+        <div class="grid grid-columns-3 ">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with three rows</h3>
+        <div class="grid grid-rows-3">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+      </div>
+
+      <span>
+        Below classes can be used on grid container and grid items.
+        <span>Class Modifier: <b>grid</b> (apply on grid container)</span>
+        <span><b>grid-columns-2</b> (apply on grid container to get two column layout)</span>
+        <span><b>grid-columns-3</b> (apply on grid container to get three column layout)</span>
+        <span><b>grid-rows-2</b> (apply on grid container to get two row layout)</span>
+        <span><b>grid-rows-3</b> (apply on grid container to get three row layout)</span>
+        <span><b>grid-item</b> (apply on grid items)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Script for grid -->
+        <div class="grid grid-columns-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <div class="grid grid-rows-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <div class="grid grid-columns-3 ">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+
+        <div class="grid grid-rows-3">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+        </script>
+      </div>
+    </div>
+    <!-- grid ends -->
+    <hr />
+
+    <!-- slider starts -->
+    <div class="components" id="slider">
+      <h2 class="component__heading">Slider</h2>
+      <p class="component__sub-heading">
+        Range slider specifies the higher and lower limits.Users are allowed to choose particular numeric value from the
+        given range only.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <div>
+          <h3 class="font-weight-600">Price Range</h3>
+          <ul class="range-spacing ">
+            <li>100</li>
+            <li>1000</li>
+            <li>2000</li>
+          </ul>
+          <input type="range" min="100" max="2000" class="input-range" id="range" onChange="getRangeValue(event)" />
+          <h3 class="showSelectedRange font-weight-600"></h3>
+
+        </div>
+      </div>
+
+      <span>
+        Give an id to input range to retrieve its value upon the user selection.Use the below classes as shown in
+        snippet.
+        <span>Class Modifier: <b>range-spacing</b>
+          <span><b>showSelectedRange</b> </span>
+        </span>
+
+        <div class="code-Snippet">
+          <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Script for slider -->
+
+          <div>
+            <h3 class="font-weight-600">Price Range</h3>
+            <ul class="range-spacing ">
+              <li>100</li>
+              <li>1000</li>
+              <li>2000</li>
+            </ul>
+            <input type="range" min="100" max="2000" class="input-range" id="range" onChange="getRangeValue(event)" />
+            <h3 class="showSelectedRange font-weight-600"></h3>
+          </div>
+
+          <!-- Javascript starts-->
+          let sliderRange = document.getElementById("range");
+          let showSelectedRange = document.getElementsByClassName("showSelectedRange")[0];
+          showSelectedRange.innerHTML = `Selected range is ${sliderRange.value} `;
+          const getRangeValue = (e) => {
+          showSelectedRange.innerHTML = `Selected range is ${e.target.value} `;
+          <!-- Javascript ends -->
+          }
+          </script>
+        </div>
+    </div>
+    <!-- slider ends -->
 
   </main>
   <footer></footer>

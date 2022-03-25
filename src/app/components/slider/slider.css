@@ -1,0 +1,17 @@
+ #slider {
+     margin-bottom: 3rem;
+ }
+ 
+ .range-spacing {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     width: 25vw;
+     margin-top: 1rem;
+ }
+
+ .input-range {
+     width: 25vw;
+
+ }
