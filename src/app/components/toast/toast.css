@@ -1,0 +1,24 @@
+#toastMessage {
+  display:none;
+  border:none;
+  width:30rem;
+  color:var(--WHITE);
+  background-color:var(--DARK-GRAY);
+  padding:1rem;
+  z-index: 1;
+  margin:auto;
+  text-align: center;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+}
+
+#toastMessage.display {
+  display: block;
+}
+
+#toastMessage .close {
+    margin: auto;
+    font-size: 2rem;
+
+}
