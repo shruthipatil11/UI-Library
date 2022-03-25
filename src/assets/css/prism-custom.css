@@ -11,11 +11,11 @@
 }
 
 .code-Snippet .language-markup .token {
-  color: red;
+  color: var(--RED-DARK);
 }
 
 .code-Snippet .language-markup .token.tag {
-  color: white;
+  color: var(--WHITE);
 }
 
 .code-Snippet div.code-toolbar > .toolbar > .toolbar-item > button {
@@ -47,19 +47,22 @@
   border: none;
   max-height: 20rem;
   border-radius: 8px;
-  background: #011627;
+  background: var(--CODE-SNIPPET-BG);
 }
 .code-Snippet .token.attr-value,
 .token.char,
 .token.regex,
 .token.string,
 .token.variable {
-  color: #7fdbca;
+  color: var(--CODE-SNIPPET-COPY-BTN);
 }
 
 .code-Snippet code[class*="language-"],
 .code-Snippet pre[class*="language-"] {
-  color: #ecc48d;
+  color: var(--CODE-SNIPPET-LANG);
   font-size: 1.3rem;
 }
 
+.code-Snippet div.code-toolbar>.toolbar {
+      right: 2.6em;
+}

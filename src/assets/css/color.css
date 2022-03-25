@@ -6,6 +6,7 @@
   --WHITE: #fff;
   /* --GREEN: #008000; */
   --RED: #e92020;
+  --RED-DARK:#ff0000;
   --CORAL: #ff7f50;
   /* --BLUE-VIOLET: #8a2be2; */
   /* --GREEN-LIGHT: #008000; */
@@ -15,6 +16,7 @@
   --DISABLED-GREY: #565454;
 
   --STEEL-GREY: #41464b;
+  --Text-OVERLAY-BG: #33415580;
 
   --ALERT-PRIMARY-BG: #9e9e9ea8;
 
@@ -64,5 +66,15 @@
 
   --LIGHT-BLACK: #363535;
 
-  --LIGHTER-GREY:#3e4152;
+  --LIGHTER-GREY: #3e4152;
+
+  --RATING-SELECTED: #ffa600;
+
+  --CODE-SNIPPET-BG :#011627;
+
+  --CODE-SNIPPET-COPY-BTN:#7fdbca;
+
+  --CODE-SNIPPET-LANG:#ecc48d;
+
+  --GRID-ITEM:#e2ded8;
 }

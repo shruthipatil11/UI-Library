@@ -49,7 +49,12 @@
         <li><a href="#input">Input</a></li>
         <li><a href="#typography">Typography</a></li>
         <li><a href="#lists">Lists</a></li>
-        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#modal">Modal</a></li>
+        <li><a href="#rating">Rating</a></li>
+        <li><a href="#toast">Toast</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#slider">slider</a></li>
+
       </ul>
     </div>
   </aside>
@@ -64,7 +69,7 @@
       </p>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- HTML -->
+          <!-- HTML -->
         <link rel="stylesheet" href="https://ui-ingredients-lib.netlify.app/src/app/docs/docs.css">
 
         <!-- CSS -->
@@ -108,7 +113,7 @@
       </span>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!--  avatar--xl  -->
+          <!--  avatar--xl  -->
         <figure class="avatar avatar--xl">
           <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
         </figure>
@@ -168,7 +173,7 @@
       </span>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- badge--online -->
+          <!-- badge--online -->
         <figure class="avatar avatar--xl badge badge--online">
           <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
           <span></span>
@@ -827,7 +832,7 @@
       <!-- Snippet for Responsive image -->
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-               <!-- Script for headings -->
+          <!-- Script for headings -->
         <h1>h1. Heading</h1>
         <h2>h2. Heading</h2>
         <h3>h3. Heading</h3>
@@ -861,7 +866,7 @@
       <!-- Snippet for Responsive image -->
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for headings -->
+          <!-- Script for headings -->
         <p class="h1">h1. heading</p>
         <p class="h2">h2. heading</p>
         <p class="h3">h3. heading</p>
@@ -889,7 +894,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different text sizes -->
+          <!-- Script for different text sizes -->
         <p class="p--large">p. large</p>
         <p class="p--regular">p. regular</p>
         <p class="p--medium">p. medium</p>
@@ -914,7 +919,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different text positions -->
+          <!-- Script for different text positions -->
         <p class="text--left">Text left</p>
         <p class="text--right">Text right</p>
         <p class="text--center">Text center</p>
@@ -938,7 +943,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different colored texts -->
+          <!-- Script for different colored texts -->
         <p class="text--primary"> Text with primary color</p>
         <p class="text--secondary">Text with secondary color</p>
         <p class="text--tertiary">Text with Tertiary color</p>
@@ -994,7 +999,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for different spaced lists -->
+          <!-- Script for different spaced lists -->
         <div class="components__parts ">
           <div class="components__list">
             <span>Unordered List</span>
@@ -1049,7 +1054,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for different stacked lists -->
+          <!-- Script for different stacked lists -->
         <ul class="components__stacked-list">
           <li><span><i class="far fa-check-circle"></i></span>Success notification</li>
           <li><span><i class="fas fa-exclamation-circle"></i></span>Warning notification</li>
@@ -1108,7 +1113,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for navigation -->
+          <!-- Script for navigation -->
         <nav>
           <ul class="navbar navbar--background">
             <li>
@@ -1141,8 +1146,295 @@
     </div>
     <!-- navigation ends -->
     <hr />
+    <!-- modal starts -->
+    <div class="components" id="modal">
+      <h2 class="component__heading">Modal</h2>
+      <p class="component__sub-heading">
+        A modal is popup that is displayed on top of current page
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <button class="btn btn--primary" id="open-modal-btn">Open Modal</button>
+        <div class="modal display-none ">
+          <!-- Modal Content -->
+          <div class="modal__content close-container">
+            <span class="close">&times;</span>
+            <div class="d-flex-column row-gap-5">
+              <h3 class="font-weight-600">Reset the password</h3>
+              <p class="p--medium">Enter the email id and we will send link to reset your password</p>
+            </div>
+            <div class="input-field">
+              <input type="password" name="inputText" class="width-100" />
+              <span class="input__label">Password</span>
+            </div>
+            <button class="btn btn--primary width-100">SEND LINK</button>
+          </div>
+        </div>
+      </div>
+
+      <span>
+        Below classes can be used on modal and modal content container and replace with your components
+        inside modal content .
+        <span>Class Modifier: <b>modal</b> (apply on modal parent container)</span>
+        <span><b>modal__content</b> (apply on modal content container)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Script for modal -->
+        <div class="modal display-none ">
+          <!-- Modal Content -->
+          <div class="modal__content close-container">
+            <span class="close">&times;</span>
+            <div class="d-flex-column row-gap-5">
+              <h3 class="font-weight-600">Reset the password</h3>
+              <p class="p--medium">Enter the email id and we will send link to reset your password</p>
+            </div>
+            <div class="input-field">
+              <input type="password" name="inputText" class="width-100" />
+              <span class="input__label">Password</span>
+            </div>
+            <button class="btn btn--primary width-100">SEND LINK</button>
+          </div>
+        </div>
+
+        <!-- Javascript starts -->
+        const modal = document.querySelector(".modal");
+        const btn = document.getElementById("open-modal-btn");
+        const modalClose = document.querySelector("#modal .close");
+        btn.addEventListener("click", () => {
+        modal.classList.remove("display-none");
+        });
+        modalClose.addEventListener("click", () => {
+        modal.classList.add("display-none");
+        });
+        <!--  Javascript ends -->
+        </script>
+      </div>
+    </div>
+    <!-- modal ends -->
+    <hr />
+
+    <!-- rating starts -->
+    <div class="components" id="rating">
+      <h2 class="component__heading">Rating</h2>
+      <p class="component__sub-heading">
+        Rating allows users to provide thier opinion based on a comparative assessment of product's quality, standard,
+        or performance.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <div>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+
+      <span>
+        Below class can be used to show rating has selected.
+        <span>Class Modifier: <b>selected</b> (apply on rating element)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Script for rating -->
+        <div>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star selected"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        </script>
+      </div>
+    </div>
+    <!-- rating ends -->
+    <hr />
+
+    <!-- toast starts -->
+    <div class="components" id="toast">
+      <h2 class="component__heading">Toast</h2>
+      <p class="component__sub-heading">
+        Toast are used to display notifications to users.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <div>
+          <button class="btn btn--primary" onclick="openToast()">Show Snackbar</button>
+          <div id="toastMessage" class="text-center p--regular">Server is busy.Retry after 5 seconds. <span
+              class="close" onClick="closeToast()">&times</span></div>
+        </div>
+      </div>
+
+      <span>
+        Toast messages disappears after 5 seconds.You can also dismiss the message by clicking on close
+        button. You can copy html to get similar look and feel of toast messages.
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Script for toast -->
+        <div>
+          <button class="btn btn--primary" onclick="openToast()">Show Snackbar</button>
+          <div id="toastMessage" class="text-center p--regular">Server is busy.Retry after 5 seconds. <span
+              class="close" onClick="closeToast()">&times</span>
+          </div>
+        </div>
+
+        <!-- Javascript starts -->
+        let toastMessage = document.getElementById("toastMessage");
+        const openToast = () => {
+        toastMessage.className = "display";
+        setTimeout(() => { toastMessage.className = toastMessage.className.replace("display", ""); }, 5000);
+        }
+        const closeToast = () => {
+        toastMessage.className = toastMessage.className.replace("display", "");
+        }
+        <!-- Javascript ends -->
+        </script>
+      </div>
+    </div>
+    <!-- toast ends -->
+    <hr />
+
+    <!-- grid starts -->
+    <div class="components" id="grid">
+      <h2 class="component__heading">Grid</h2>
+      <p class="component__sub-heading">
+        Grid Layout is a two-dimensional layout system.It helps to layout the page content in terms of rows and columns
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <h3 class="font-weight-600">Grid with two columns</h3>
+        <div class="grid grid-columns-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with two rows</h3>
+        <div class="grid grid-rows-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with three columns</h3>
+        <div class="grid grid-columns-3 ">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+
+        <h3 class="font-weight-600">Grid with three rows</h3>
+        <div class="grid grid-rows-3">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+      </div>
+
+      <span>
+        Below classes can be used on grid container and grid items.
+        <span>Class Modifier: <b>grid</b> (apply on grid container)</span>
+        <span><b>grid-columns-2</b> (apply on grid container to get two column layout)</span>
+        <span><b>grid-columns-3</b> (apply on grid container to get three column layout)</span>
+        <span><b>grid-rows-2</b> (apply on grid container to get two row layout)</span>
+        <span><b>grid-rows-3</b> (apply on grid container to get three row layout)</span>
+        <span><b>grid-item</b> (apply on grid items)</span>
+      </span>
+
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+          <!-- Script for grid -->
+        <div class="grid grid-columns-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <div class="grid grid-rows-2">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+        </div>
+
+        <div class="grid grid-columns-3 ">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+
+        <div class="grid grid-rows-3">
+          <div class="grid-item">Grid item 1</div>
+          <div class="grid-item">Grid item 2</div>
+          <div class="grid-item">Grid item 3</div>
+        </div>
+        </script>
+      </div>
+    </div>
+    <!-- grid ends -->
+    <hr />
+
+    <!-- slider starts -->
+    <div class="components" id="slider">
+      <h2 class="component__heading">Slider</h2>
+      <p class="component__sub-heading">
+        Range slider specifies the higher and lower limits.Users are allowed to choose particular numeric value from the
+        given range only.
+      </p>
+
+      <div class="components__parts components--flex--column">
+        <div>
+          <h3 class="font-weight-600">Price Range</h3>
+          <ul class="range-spacing ">
+            <li>100</li>
+            <li>1000</li>
+            <li>2000</li>
+          </ul>
+          <input type="range" min="100" max="2000" class="input-range" id="range" onChange="getRangeValue(event)" />
+          <h3 class="showSelectedRange font-weight-600"></h3>
+
+        </div>
+      </div>
+
+      <span>
+        Give an id to input range to retrieve its value upon the user selection.Use the below classes as shown in
+        snippet.
+        <span>Class Modifier: <b>range-spacing</b>
+          <span><b>showSelectedRange</b> </span>
+        </span>
+
+        <div class="code-Snippet">
+          <script type="text/plain" class="line-numbers language-css snippet_container__script">
+            <!-- Script for slider -->
+
+          <div>
+            <h3 class="font-weight-600">Price Range</h3>
+            <ul class="range-spacing ">
+              <li>100</li>
+              <li>1000</li>
+              <li>2000</li>
+            </ul>
+            <input type="range" min="100" max="2000" class="input-range" id="range" onChange="getRangeValue(event)" />
+            <h3 class="showSelectedRange font-weight-600"></h3>
+          </div>
+
+          <!-- Javascript starts-->
+          let sliderRange = document.getElementById("range");
+          let showSelectedRange = document.getElementsByClassName("showSelectedRange")[0];
+          showSelectedRange.innerHTML = `Selected range is ${sliderRange.value} `;
+          const getRangeValue = (e) => {
+          showSelectedRange.innerHTML = `Selected range is ${e.target.value} `;
+          <!-- Javascript ends -->
+          }
+          </script>
+        </div>
+    </div>
+    <!-- slider ends -->
+
   </main>
   <footer></footer>
+  <script src="../docs/docs.js"></script>
   <script src="../../assets/js/prism.js"></script>
 </body>
 
