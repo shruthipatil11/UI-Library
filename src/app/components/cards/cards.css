@@ -1,6 +1,6 @@
 .card {
   box-shadow: var(--LIGHT-BOX-SHADOW);
-  min-height: 15.2rem;
+  min-height: 15rem;
   max-width: 20rem;
 }
 
