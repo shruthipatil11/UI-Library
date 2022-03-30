@@ -1,6 +1,7 @@
 .card {
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
   min-height: 15.2rem;
+  max-width: 20rem;
 }
 
 .card__body {
@@ -14,7 +15,7 @@
   font-size: 1.2rem;
 }
 
-.card__image {
+.card--horizontal .card__image {
   max-width: 18rem;
 }
 
@@ -41,12 +42,10 @@
   row-gap: 13px;
 }
 
-.card__image {
-  max-width: 18rem;
-}
 
 .card--horizontal {
   display: flex;
+  max-width: 40rem;
 }
 
 .card--horizontal .card__body {
@@ -70,9 +69,8 @@
   color: var(--GREY);
 }
 
-.card .card--shadow {
-  min-height: inherit;
-  box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 5%);
+.card--shadow {
+  box-shadow: 14px 20px 20px 4px rgb(0 0 0 / 5%);
 }
 
 .card__text {

@@ -64,11 +64,12 @@
       </p>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- HTML -->
-        <link rel="stylesheet" href="https://ui-ingredients-lib.netlify.app/src/app/docs/docs.css">
+
+         <!-- HTML -->
+        <link rel="stylesheet" href="https://oasis-library.netlify.app/src/app/docs/docs.css">
 
         <!-- CSS -->
-        @import url("https://ui-ingredients-lib.netlify.app/src/app/docs/docs.css");
+        @import url("https://oasis-library.netlify.app/src/app/docs/docs.css");
         </script>
       </div>
     </section>
@@ -108,7 +109,7 @@
       </span>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!--  avatar--xl  -->
+          <!--  avatar--xl  -->
         <figure class="avatar avatar--xl">
           <img src="../../assets/images/avatar-1.png" alt="avatar profile is not available" />
         </figure>
@@ -168,7 +169,7 @@
       </span>
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- badge--online -->
+          <!-- badge--online -->
         <figure class="avatar avatar--xl badge badge--online">
           <img src="../../assets/images/avatar-3.png" alt="avatar profile is not available" />
           <span></span>
@@ -420,8 +421,8 @@
         A card is a flexible and extensible content container.
       </p>
       <p>
-        We have options for vertical card, horizontal card, card with close
-        button,text only card and card with text overlay. Modifier classes are
+        We have options for vertical card, horizontal card, card with dismiss,card with badge
+        ,text only card , card with text overlay and card with shadow. Modifier classes are
         available for these types of cards. You can choose the required card
         and copy its html and substitute with your desired image and text.
       </p>
@@ -583,10 +584,10 @@
         </script>
       </div>
 
-      <!-- Text only card with shadow and Card with text overlay -->
-      <h3>Text only card with shadow and Card with text overlay</h3>
+      <!-- Text only card and Card with text overlay -->
+      <h3>Text only card and Card with text overlay</h3>
       <div class="components__parts">
-        <div class="card card--shadow card__text">
+        <div class="card card__text">
           <div class="card__body">
             <h3>Card Header</h3>
             <p>
@@ -607,7 +608,7 @@
             <p>Men Premium Jacket</p>
             <b> &#x20B9; 2000</b>
             <div class="d-flex card--align-items card--spacing">
-              <button class="btn btn--primary flex-center">
+              <button class="btn disabled flex-center" disabled>
                 <span>
                   <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
               </button>
@@ -620,7 +621,6 @@
 
       <span>
         Class Modifier:
-        <span><b>card--shadow </b>(applies shadow to card)</span>
         <span><b>card__text</b>(explicit styling for text only card)</span>
       </span>
 
@@ -628,8 +628,8 @@
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
 
-          <!-- Snippet for Text only card with shadow -->
-        <div class="card card--shadow card__text">
+          <!-- Snippet for Text only card -->
+        <div class="card card__text">
           <div class="card__body">
             <h3>Card Header</h3>
             <p>
@@ -644,36 +644,76 @@
       </div>
 
       <span>
-        <span>
-          Class Modifier: <b>card--text-overlay</b>(card with text-overlay)</pre>
-        </span>
+        Class Modifier: <span><b>card--text-overlay</b>(card with text-overlay)</pre></span>
+      </span>
 
-        <!-- Snippet for Card with text overlay-->
-        <div class="code-Snippet">
-          <script type="text/plain" class="line-numbers language-css snippet_container__script">
+      <!-- Snippet for Card with text overlay-->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
 
-            <!-- Snippet for Card with text overlay-->
+          <!-- Snippet for Card with text overlay-->
 
-          <div class="card card--text-overlay">
-            <figure class="card__image badge">
-              <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
-            </figure>
-            <div class="text-overlay">Out Of Stock</div>
-            <div class="card__body">
-              <p>Men Premium Jacket</p>
-              <b> &#x20B9; 2000</b>
-              <div class="d-flex card--align-items">
-                <button class="btn btn--primary flex-center">
-                  <span>
-                    <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
-                </button>
-                <i class="far fa-heart primary--light-color fa-lg"></i>
-                <i class="fas fa-share-alt primary--light-color fa-lg"></i>
-              </div>
+        <div class="card card--text-overlay">
+          <figure class="card__image badge">
+            <img class="image--responsive" src="../../assets/images/tshirt.jpg" alt="product image" />
+          </figure>
+          <div class="text-overlay">Out Of Stock</div>
+          <div class="card__body">
+            <p>Men Premium Jacket</p>
+            <b> &#x20B9; 2000</b>
+            <div class="d-flex card--align-items">
+              <button class="btn btn--primary flex-center">
+                <span>
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i></span>Go to cart
+              </button>
+              <i class="far fa-heart primary--light-color fa-lg"></i>
+              <i class="fas fa-share-alt primary--light-color fa-lg"></i>
             </div>
           </div>
-          </script>
         </div>
+        </script>
+      </div>
+
+
+      <!-- Card with shadow-->
+      <h3>Card with shadow</h3>
+      <div class="components__parts">
+        <div class="card card--shadow card__text">
+          <div class="card__body">
+            <h3>Card Header</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facilis, est sit nulla incidunt accusantium ullam aliquam,
+              laboriosam, laudantium molestiae omnis distinctio. Aliquam alias
+              laborum impedit illum praesentium vel, magnam fuga.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <span>
+        Class Modifier:
+        <span><b>card--shadow </b>(apply card--shadow class to card container)</span>
+      </span>
+
+      <!-- Snippet card with shadow -->
+      <div class="code-Snippet">
+        <script type="text/plain" class="line-numbers language-css snippet_container__script">
+
+          <!-- Snippet for card with shadow -->
+        <div class="card card--shadow card__text">
+          <div class="card__body">
+            <h3>Card Header</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facilis, est sit nulla incidunt accusantium ullam aliquam,
+              laboriosam, laudantium molestiae omnis distinctio. Aliquam alias
+              laborum impedit illum praesentium vel, magnam fuga.
+            </p>
+          </div>
+        </div>
+        </script>
+      </div>
     </section>
     <!-- Cards ends -->
     <hr />
@@ -710,22 +750,23 @@
 
       <h3>Round Image</h3>
       <div class="components__parts">
-        <figure class="image-container image--round">
-          <img class="image--responsive" src="../../assets/images/image-responsive.jpg" alt="Responsive Round image" />
+        <figure class="image-container ">
+          <img class="image--responsive image--round" src="../../assets/images/image-responsive.jpg"
+            alt="Responsive Round image" />
         </figure>
       </div>
 
       <span>
         Class Modifier:
-        <span><b>image--round</b>(apply on container)</span>
+        <span><b>image--round</b>(apply on img tag as shown in snippet)</span>
       </span>
 
       <!-- Snippet for Responsive Round image -->
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
           <!-- Snippet for Responsive Round image -->
-        <figure class="image-container image--round">
-          <img class="image--responsive" src="..." alt="Responsive Round image" />
+        <figure class="image-container">
+          <img class="image--responsive image--round" src="..." alt="Responsive Round image" />
         </figure>
         </script>
       </div>
@@ -827,7 +868,7 @@
       <!-- Snippet for Responsive image -->
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-               <!-- Script for headings -->
+          <!-- Script for headings -->
         <h1>h1. Heading</h1>
         <h2>h2. Heading</h2>
         <h3>h3. Heading</h3>
@@ -861,7 +902,7 @@
       <!-- Snippet for Responsive image -->
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for headings -->
+          <!-- Script for headings -->
         <p class="h1">h1. heading</p>
         <p class="h2">h2. heading</p>
         <p class="h3">h3. heading</p>
@@ -889,7 +930,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different text sizes -->
+          <!-- Script for different text sizes -->
         <p class="p--large">p. large</p>
         <p class="p--regular">p. regular</p>
         <p class="p--medium">p. medium</p>
@@ -914,7 +955,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different text positions -->
+          <!-- Script for different text positions -->
         <p class="text--left">Text left</p>
         <p class="text--right">Text right</p>
         <p class="text--center">Text center</p>
@@ -938,7 +979,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-            <!-- Script for different colored texts -->
+          <!-- Script for different colored texts -->
         <p class="text--primary"> Text with primary color</p>
         <p class="text--secondary">Text with secondary color</p>
         <p class="text--tertiary">Text with Tertiary color</p>
@@ -994,7 +1035,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for different spaced lists -->
+          <!-- Script for different spaced lists -->
         <div class="components__parts ">
           <div class="components__list">
             <span>Unordered List</span>
@@ -1049,7 +1090,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for different stacked lists -->
+          <!-- Script for different stacked lists -->
         <ul class="components__stacked-list">
           <li><span><i class="far fa-check-circle"></i></span>Success notification</li>
           <li><span><i class="fas fa-exclamation-circle"></i></span>Warning notification</li>
@@ -1108,7 +1149,7 @@
 
       <div class="code-Snippet">
         <script type="text/plain" class="line-numbers language-css snippet_container__script">
-        <!-- Script for navigation -->
+          <!-- Script for navigation -->
         <nav>
           <ul class="navbar navbar--background">
             <li>
