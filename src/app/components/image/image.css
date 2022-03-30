@@ -1,12 +1,10 @@
-.image--round {
-  border-radius: 50%;
+.image-container {
   width: 15rem;
   height: 15rem;
 }
 
-.image-container {
-  width: 30rem;
-  height: 15rem;
+.image--round {
+  border-radius: 50%;
 }
 
 .image--responsive {
