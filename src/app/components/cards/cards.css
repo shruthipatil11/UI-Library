@@ -1,5 +1,5 @@
 .card {
-  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
+  box-shadow: var(--LIGHT-BOX-SHADOW);
   min-height: 15.2rem;
   max-width: 20rem;
 }
@@ -70,7 +70,7 @@
 }
 
 .card--shadow {
-  box-shadow: 14px 20px 20px 4px rgb(0 0 0 / 5%);
+  box-shadow: var(--DARK-BOX-SHADOW);
 }
 
 .card__text {
