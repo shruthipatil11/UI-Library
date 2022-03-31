@@ -40,7 +40,7 @@ There are two methods.
 @import url("https://oasis-ui-library.netlify.app/src/app/docs/docs.css");
 ```
 
-### Magnificent UI contains the following Components
+### Oasis UI contains the following Components
 
 ---
 
@@ -60,9 +60,9 @@ There are two methods.
 
 > [8. Input](#input)
 
-> [9. Snackbar](#snackbar)
-
 > [10. Lists](#lists)
+
+> [11. Navigation](#navigation)
 
 ---
 
@@ -74,7 +74,11 @@ You will find the following types of _Typography_
 
 > Headings
 
-> Font and its CDN
+> Text Sizes
+
+> Text Position
+
+> Colored Text
 
 ---
 
@@ -117,7 +121,9 @@ You will find the following types of _Button_
 
 > Icon buttons with label
 
-> Floating Button and Link Button
+> Floating Button
+
+> Link Button
 
 ---
 
@@ -161,6 +167,8 @@ You will find the following types of _Card_
 
 > Text only cards
 
+> Card with shadow
+
 ---
 
 ### Image
@@ -190,11 +198,17 @@ You will find the following types of _Input_
 
 Related items can be grouped in to lists
 
-You will find the following types of _Rating_
+You will find the following types of _Lists_
 
 > Spaced List
 
 > Stacked List
+
+---
+
+### Navigation
+
+Navigation bar is used to navigate through the web apps or websites.
 
 ---
 
